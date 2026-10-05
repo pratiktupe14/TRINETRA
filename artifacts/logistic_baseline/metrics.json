@@ -1,0 +1,31 @@
+{
+  "precision": 0.7142857142857143,
+  "recall": 1.0,
+  "f1_score": 0.8333333333333333,
+  "false_positive_rate": 0.11428571428571428,
+  "tp": 10,
+  "tn": 31,
+  "fp": 4,
+  "fn": 0,
+  "support_benign": 35,
+  "support_attack": 10,
+  "total_samples": 45,
+  "confusion_matrix": [
+    [
+      31,
+      4
+    ],
+    [
+      0,
+      10
+    ]
+  ],
+  "roc_auc": 0.9942857142857142,
+  "pr_auc": 0.9833333333333333,
+  "class_distribution": {
+    "BENIGN": 35,
+    "ATTACK": 10
+  },
+  "decision_threshold": 0.5,
+  "per_class_report": null
+}

@@ -1,0 +1,39 @@
+{
+  "evaluation_horizons": [
+    1,
+    3,
+    5
+  ],
+  "candidates": {
+    "A_persistence": "Baseline S_t -> S_t",
+    "B_linear": "Linear Dynamics Baseline (Ridge alpha=10)",
+    "C_production_wm": "Production StateResidualDynamicsModel (artifacts/world_model/best_model.pt)",
+    "D_existing_gru": "Phase 10B GRU Candidate (cand-gru-real-d49b3ee3)",
+    "E_improved_gru": "Phase 12 Retrained GRUDynamicsWorldModel on CTU-13 Train",
+    "F_gru_attention": "Phase 12 GRUAttentionDynamicsWorldModel on CTU-13 Train"
+  },
+  "known_test_summary": {
+    "k_1": {
+      "best_model": "F_gru_attention",
+      "linear_mae": 0.27954530715942383,
+      "linear_imp_pct": 14.73621085848369,
+      "production_mae": 0.3377878665924072,
+      "gru_att_mae": 0.25933125615119934
+    },
+    "k_3": {
+      "best_model": "B_linear",
+      "linear_mae": 0.3489093482494354,
+      "linear_imp_pct": 20.95820082648504,
+      "production_mae": 0.45000967383384705,
+      "gru_att_mae": 0.39714404940605164
+    },
+    "k_5": {
+      "best_model": "B_linear",
+      "linear_mae": 0.34974896907806396,
+      "linear_imp_pct": 21.10083876342552,
+      "production_mae": 0.45199647545814514,
+      "gru_att_mae": 0.40261566638946533
+    }
+  },
+  "promotion_recommendation": "DO NOT PROMOTE (Keep candidates isolated; production checkpoint unchanged)"
+}

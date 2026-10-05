@@ -1,0 +1,11 @@
+{
+  "C": 1.0,
+  "max_iter": 1000,
+  "class_weight": "balanced",
+  "solver": "liblinear",
+  "random_state": 42,
+  "mode": "binary",
+  "decision_threshold": 0.5,
+  "feature_representation": "flattened_window",
+  "tolerance": 0.0001
+}

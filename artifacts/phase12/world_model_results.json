@@ -1,0 +1,201 @@
+{
+  "benchmark_title": "Multi-Horizon Real CTU-13 World Model Benchmark",
+  "timestamp": "2026-10-05T17:48:48.348148+00:00",
+  "state_normalization": "log1p_standard_scaler",
+  "known_test": {
+    "k_1": {
+      "num_pairs": 17982,
+      "candidate_A_persistence": {
+        "mae": 0.3278592526912689,
+        "mse": 0.6154208779335022
+      },
+      "candidate_B_linear": {
+        "mae": 0.27954530715942383,
+        "mse": 0.33730700612068176,
+        "imp_vs_pers_pct": 14.73621085848369
+      },
+      "candidate_C_production_wm": {
+        "mae": 0.3377878665924072,
+        "mse": 0.614935040473938,
+        "imp_vs_pers_pct": -3.028284482244903
+      },
+      "candidate_D_existing_gru": {
+        "mae": 0.883093535900116,
+        "mse": 3.2767279148101807,
+        "imp_vs_pers_pct": -169.3513327136003
+      },
+      "candidate_E_improved_gru": {
+        "mae": 0.2604069411754608,
+        "mse": 0.3409542143344879,
+        "imp_vs_pers_pct": 20.573581617275117
+      },
+      "candidate_F_gru_attention": {
+        "mae": 0.25933125615119934,
+        "mse": 0.34546199440956116,
+        "imp_vs_pers_pct": 20.90167505594984
+      }
+    },
+    "k_3": {
+      "num_pairs": 17976,
+      "candidate_A_persistence": {
+        "mae": 0.4414237439632416,
+        "mse": 0.8617954850196838
+      },
+      "candidate_B_linear": {
+        "mae": 0.3489093482494354,
+        "mse": 0.4807603657245636,
+        "imp_vs_pers_pct": 20.95820082648504
+      },
+      "candidate_C_production_wm": {
+        "mae": 0.45000967383384705,
+        "mse": 0.8605785965919495,
+        "imp_vs_pers_pct": -1.945030833296002
+      },
+      "candidate_D_existing_gru": {
+        "mae": 0.9341395497322083,
+        "mse": 3.3051249980926514,
+        "imp_vs_pers_pct": -111.61964005958778
+      },
+      "candidate_E_improved_gru": {
+        "mae": 0.4138711392879486,
+        "mse": 0.6806513667106628,
+        "imp_vs_pers_pct": 6.24177987938217
+      },
+      "candidate_F_gru_attention": {
+        "mae": 0.39714404940605164,
+        "mse": 0.6491546630859375,
+        "imp_vs_pers_pct": 10.031128848779913
+      }
+    },
+    "k_5": {
+      "num_pairs": 17970,
+      "candidate_A_persistence": {
+        "mae": 0.4432859420776367,
+        "mse": 0.8621577620506287
+      },
+      "candidate_B_linear": {
+        "mae": 0.34974896907806396,
+        "mse": 0.4836432635784149,
+        "imp_vs_pers_pct": 21.10083876342552
+      },
+      "candidate_C_production_wm": {
+        "mae": 0.45199647545814514,
+        "mse": 0.8610086441040039,
+        "imp_vs_pers_pct": -1.9649690163226152
+      },
+      "candidate_D_existing_gru": {
+        "mae": 0.916558027267456,
+        "mse": 3.1444501876831055,
+        "imp_vs_pers_pct": -106.76446814603989
+      },
+      "candidate_E_improved_gru": {
+        "mae": 0.41608381271362305,
+        "mse": 0.6955856680870056,
+        "imp_vs_pers_pct": 6.136495802240827
+      },
+      "candidate_F_gru_attention": {
+        "mae": 0.40261566638946533,
+        "mse": 0.6642945408821106,
+        "imp_vs_pers_pct": 9.174747640948377
+      }
+    }
+  },
+  "unseen_test_scenario_10": {
+    "k_1": {
+      "num_pairs": 5994,
+      "candidate_A_persistence": {
+        "mae": 0.24871918559074402,
+        "mse": 0.6160579323768616
+      },
+      "candidate_B_linear": {
+        "mae": 0.5411140322685242,
+        "mse": 1.781813621520996,
+        "imp_vs_pers_pct": -117.56014254515917
+      },
+      "candidate_C_production_wm": {
+        "mae": 0.2698768377304077,
+        "mse": 0.6167037487030029,
+        "imp_vs_pers_pct": -8.506598951268085
+      },
+      "candidate_D_existing_gru": {
+        "mae": 0.6727646589279175,
+        "mse": 2.5064451694488525,
+        "imp_vs_pers_pct": -170.49155329069268
+      },
+      "candidate_E_improved_gru": {
+        "mae": 0.30547112226486206,
+        "mse": 0.5389562249183655,
+        "imp_vs_pers_pct": -22.81762611987417
+      },
+      "candidate_F_gru_attention": {
+        "mae": 0.27637529373168945,
+        "mse": 0.4888106882572174,
+        "imp_vs_pers_pct": -11.119366186364864
+      }
+    },
+    "k_3": {
+      "num_pairs": 5992,
+      "candidate_A_persistence": {
+        "mae": 0.33621227741241455,
+        "mse": 0.8690651655197144
+      },
+      "candidate_B_linear": {
+        "mae": 0.7208970785140991,
+        "mse": 3.421292781829834,
+        "imp_vs_pers_pct": -114.41717406786944
+      },
+      "candidate_C_production_wm": {
+        "mae": 0.35502326488494873,
+        "mse": 0.868893563747406,
+        "imp_vs_pers_pct": -5.594941987950608
+      },
+      "candidate_D_existing_gru": {
+        "mae": 0.7179890871047974,
+        "mse": 2.6157541275024414,
+        "imp_vs_pers_pct": -113.55224713338758
+      },
+      "candidate_E_improved_gru": {
+        "mae": 0.4407764673233032,
+        "mse": 0.8966839909553528,
+        "imp_vs_pers_pct": -31.100606918651664
+      },
+      "candidate_F_gru_attention": {
+        "mae": 0.40205809473991394,
+        "mse": 0.8114942908287048,
+        "imp_vs_pers_pct": -19.584560757181713
+      }
+    },
+    "k_5": {
+      "num_pairs": 5990,
+      "candidate_A_persistence": {
+        "mae": 0.34304147958755493,
+        "mse": 0.8841226696968079
+      },
+      "candidate_B_linear": {
+        "mae": 0.6934834718704224,
+        "mse": 3.300792932510376,
+        "imp_vs_pers_pct": -102.15726405650591
+      },
+      "candidate_C_production_wm": {
+        "mae": 0.3617473244667053,
+        "mse": 0.8839554786682129,
+        "imp_vs_pers_pct": -5.452908916068022
+      },
+      "candidate_D_existing_gru": {
+        "mae": 0.7070000767707825,
+        "mse": 2.5017683506011963,
+        "imp_vs_pers_pct": -106.09748754679282
+      },
+      "candidate_E_improved_gru": {
+        "mae": 0.43936747312545776,
+        "mse": 0.9047642946243286,
+        "imp_vs_pers_pct": -28.0799469422095
+      },
+      "candidate_F_gru_attention": {
+        "mae": 0.39314258098602295,
+        "mse": 0.8082883954048157,
+        "imp_vs_pers_pct": -14.604935488783987
+      }
+    }
+  }
+}

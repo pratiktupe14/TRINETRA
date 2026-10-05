@@ -1,0 +1,35 @@
+{
+  "evaluation_target": "CTU-13 Scenario 10 (Rbot UDP & ICMP Storm)",
+  "isolation_verified": true,
+  "classification_comparison": {
+    "known_test_f1": 0.011386742578283855,
+    "unseen_test_f1": 0.0,
+    "known_test_recall": 0.2978723404255319,
+    "unseen_test_recall": 0.0,
+    "known_test_precision": 0.005804311774461028,
+    "unseen_test_precision": 0.0,
+    "known_test_fpr": 0.1335933147632312,
+    "unseen_test_fpr": 0.10772967566795257,
+    "known_test_roc_auc": 0.6395460202690689,
+    "unseen_test_roc_auc": NaN
+  },
+  "world_model_forecasting_comparison": {
+    "known_test": {
+      "k_1_prod_mae": 32860.9140625,
+      "k_1_gru_mae": 32861.5390625,
+      "k_3_prod_mae": 34934.67578125,
+      "k_3_gru_mae": 34935.26171875,
+      "k_5_prod_mae": 34956.0625,
+      "k_5_gru_mae": 34956.62890625
+    },
+    "unseen_test_scenario_10": {
+      "k_1_prod_mae": 2051.044189453125,
+      "k_1_gru_mae": 2051.71484375,
+      "k_3_prod_mae": 2128.3857421875,
+      "k_3_gru_mae": 2129.01513671875,
+      "k_5_prod_mae": 2137.97021484375,
+      "k_5_gru_mae": 2138.571533203125
+    }
+  },
+  "findings": "Scenario 10 exhibits substantial distribution shift due to extreme volumetric DDoS traffic. Forecasting dynamics on Scenario 10 reflect realistic out-of-distribution network behavior."
+}

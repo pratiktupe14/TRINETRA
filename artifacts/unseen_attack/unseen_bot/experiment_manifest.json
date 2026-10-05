@@ -1,0 +1,26 @@
+{
+  "experiment_id": "unseen_bot",
+  "created_at": "2026-10-05T00:39:52.774834+00:00",
+  "data_nature": "SYNTHETIC SOFTWARE VALIDATION",
+  "held_out_categories": [
+    "Bot"
+  ],
+  "known_categories": [
+    "DDoS",
+    "FTP-Patator",
+    "PortScan"
+  ],
+  "sample_counts": {
+    "train_samples": 265,
+    "val_samples": 57,
+    "known_test_samples": 43,
+    "unseen_test_samples": 75
+  },
+  "decision_threshold": 0.5,
+  "summary_metrics": {
+    "known_f1": 0.8163265306122449,
+    "unseen_f1": 0.0,
+    "f1_degradation": 0.8163265306122449,
+    "unseen_fpr": 0.06666666666666667
+  }
+}

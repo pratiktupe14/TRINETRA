@@ -1,0 +1,747 @@
+{
+  "canonical_flow_features_total": 78,
+  "flow_features_available_netflow": 39,
+  "flow_features_coverage_ratio_netflow": 0.5,
+  "flow_features_available_pcap": 78,
+  "flow_features_coverage_ratio_pcap": 1.0,
+  "packet_features_total": 18,
+  "packet_features_available_pcap": 18,
+  "packet_features_coverage_ratio_pcap": 1.0,
+  "flow_feature_mapping": [
+    {
+      "feature_name": "ack_flag_cnt",
+      "canonical_feature": "ack_flag_cnt",
+      "ctu13_source_field": "State (A/ACK substring)",
+      "derivation_type": "direct",
+      "status": "available",
+      "domain": "flow_level"
+    },
+    {
+      "feature_name": "active_max",
+      "canonical_feature": "active_max",
+      "ctu13_source_field": null,
+      "derivation_type": "unavailable_netflow_requires_pcap",
+      "status": "unavailable_in_netflow",
+      "domain": "flow_level"
+    },
+    {
+      "feature_name": "active_mean",
+      "canonical_feature": "active_mean",
+      "ctu13_source_field": null,
+      "derivation_type": "unavailable_netflow_requires_pcap",
+      "status": "unavailable_in_netflow",
+      "domain": "flow_level"
+    },
+    {
+      "feature_name": "active_min",
+      "canonical_feature": "active_min",
+      "ctu13_source_field": null,
+      "derivation_type": "unavailable_netflow_requires_pcap",
+      "status": "unavailable_in_netflow",
+      "domain": "flow_level"
+    },
+    {
+      "feature_name": "active_std",
+      "canonical_feature": "active_std",
+      "ctu13_source_field": null,
+      "derivation_type": "unavailable_netflow_requires_pcap",
+      "status": "unavailable_in_netflow",
+      "domain": "flow_level"
+    },
+    {
+      "feature_name": "bwd_avg_bulk_rate",
+      "canonical_feature": "bwd_avg_bulk_rate",
+      "ctu13_source_field": null,
+      "derivation_type": "unavailable_netflow_requires_pcap",
+      "status": "unavailable_in_netflow",
+      "domain": "flow_level"
+    },
+    {
+      "feature_name": "bwd_avg_bytes_per_bulk",
+      "canonical_feature": "bwd_avg_bytes_per_bulk",
+      "ctu13_source_field": null,
+      "derivation_type": "unavailable_netflow_requires_pcap",
+      "status": "unavailable_in_netflow",
+      "domain": "flow_level"
+    },
+    {
+      "feature_name": "bwd_avg_pkts_per_bulk",
+      "canonical_feature": "bwd_avg_pkts_per_bulk",
+      "ctu13_source_field": null,
+      "derivation_type": "unavailable_netflow_requires_pcap",
+      "status": "unavailable_in_netflow",
+      "domain": "flow_level"
+    },
+    {
+      "feature_name": "bwd_bytes_per_s",
+      "canonical_feature": "bwd_bytes_per_s",
+      "ctu13_source_field": "DstBytes / Dur",
+      "derivation_type": "derived",
+      "status": "available",
+      "domain": "flow_level"
+    },
+    {
+      "feature_name": "bwd_header_length",
+      "canonical_feature": "bwd_header_length",
+      "ctu13_source_field": null,
+      "derivation_type": "unavailable_netflow_requires_pcap",
+      "status": "unavailable_in_netflow",
+      "domain": "flow_level"
+    },
+    {
+      "feature_name": "bwd_iat_max",
+      "canonical_feature": "bwd_iat_max",
+      "ctu13_source_field": null,
+      "derivation_type": "unavailable_netflow_requires_pcap",
+      "status": "unavailable_in_netflow",
+      "domain": "flow_level"
+    },
+    {
+      "feature_name": "bwd_iat_mean",
+      "canonical_feature": "bwd_iat_mean",
+      "ctu13_source_field": null,
+      "derivation_type": "unavailable_netflow_requires_pcap",
+      "status": "unavailable_in_netflow",
+      "domain": "flow_level"
+    },
+    {
+      "feature_name": "bwd_iat_min",
+      "canonical_feature": "bwd_iat_min",
+      "ctu13_source_field": null,
+      "derivation_type": "unavailable_netflow_requires_pcap",
+      "status": "unavailable_in_netflow",
+      "domain": "flow_level"
+    },
+    {
+      "feature_name": "bwd_iat_std",
+      "canonical_feature": "bwd_iat_std",
+      "ctu13_source_field": null,
+      "derivation_type": "unavailable_netflow_requires_pcap",
+      "status": "unavailable_in_netflow",
+      "domain": "flow_level"
+    },
+    {
+      "feature_name": "bwd_iat_total",
+      "canonical_feature": "bwd_iat_total",
+      "ctu13_source_field": null,
+      "derivation_type": "unavailable_netflow_requires_pcap",
+      "status": "unavailable_in_netflow",
+      "domain": "flow_level"
+    },
+    {
+      "feature_name": "bwd_pkt_len_max",
+      "canonical_feature": "bwd_pkt_len_max",
+      "ctu13_source_field": "DstBytes / BwdPkts",
+      "derivation_type": "derived",
+      "status": "available",
+      "domain": "flow_level"
+    },
+    {
+      "feature_name": "bwd_pkt_len_mean",
+      "canonical_feature": "bwd_pkt_len_mean",
+      "ctu13_source_field": "DstBytes / BwdPkts",
+      "derivation_type": "derived",
+      "status": "available",
+      "domain": "flow_level"
+    },
+    {
+      "feature_name": "bwd_pkt_len_min",
+      "canonical_feature": "bwd_pkt_len_min",
+      "ctu13_source_field": "DstBytes / BwdPkts",
+      "derivation_type": "derived",
+      "status": "available",
+      "domain": "flow_level"
+    },
+    {
+      "feature_name": "bwd_pkt_len_skew",
+      "canonical_feature": "bwd_pkt_len_skew",
+      "ctu13_source_field": null,
+      "derivation_type": "unavailable_netflow_requires_pcap",
+      "status": "unavailable_in_netflow",
+      "domain": "flow_level"
+    },
+    {
+      "feature_name": "bwd_pkt_len_std",
+      "canonical_feature": "bwd_pkt_len_std",
+      "ctu13_source_field": null,
+      "derivation_type": "unavailable_netflow_requires_pcap",
+      "status": "unavailable_in_netflow",
+      "domain": "flow_level"
+    },
+    {
+      "feature_name": "bwd_pkt_len_var",
+      "canonical_feature": "bwd_pkt_len_var",
+      "ctu13_source_field": null,
+      "derivation_type": "unavailable_netflow_requires_pcap",
+      "status": "unavailable_in_netflow",
+      "domain": "flow_level"
+    },
+    {
+      "feature_name": "bwd_psh_flags",
+      "canonical_feature": "bwd_psh_flags",
+      "ctu13_source_field": "0",
+      "derivation_type": "derived",
+      "status": "available",
+      "domain": "flow_level"
+    },
+    {
+      "feature_name": "bwd_urg_flags",
+      "canonical_feature": "bwd_urg_flags",
+      "ctu13_source_field": "0",
+      "derivation_type": "derived",
+      "status": "available",
+      "domain": "flow_level"
+    },
+    {
+      "feature_name": "cwr_flag_cnt",
+      "canonical_feature": "cwr_flag_cnt",
+      "ctu13_source_field": "0 (unsupported in NetFlow)",
+      "derivation_type": "derived",
+      "status": "available",
+      "domain": "flow_level"
+    },
+    {
+      "feature_name": "down_up_ratio",
+      "canonical_feature": "down_up_ratio",
+      "ctu13_source_field": "TotBwdPkts / TotFwdPkts",
+      "derivation_type": "derived",
+      "status": "available",
+      "domain": "flow_level"
+    },
+    {
+      "feature_name": "dst_port",
+      "canonical_feature": "dst_port",
+      "ctu13_source_field": "Dport",
+      "derivation_type": "direct",
+      "status": "available",
+      "domain": "flow_level"
+    },
+    {
+      "feature_name": "ece_flag_cnt",
+      "canonical_feature": "ece_flag_cnt",
+      "ctu13_source_field": "0 (unsupported in NetFlow)",
+      "derivation_type": "derived",
+      "status": "available",
+      "domain": "flow_level"
+    },
+    {
+      "feature_name": "fin_flag_cnt",
+      "canonical_feature": "fin_flag_cnt",
+      "ctu13_source_field": "State (F/FIN substring)",
+      "derivation_type": "direct",
+      "status": "available",
+      "domain": "flow_level"
+    },
+    {
+      "feature_name": "flow_bytes_per_s",
+      "canonical_feature": "flow_bytes_per_s",
+      "ctu13_source_field": "TotBytes / Dur",
+      "derivation_type": "derived",
+      "status": "available",
+      "domain": "flow_level"
+    },
+    {
+      "feature_name": "flow_duration_us",
+      "canonical_feature": "flow_duration_us",
+      "ctu13_source_field": "Dur (converted to us)",
+      "derivation_type": "direct",
+      "status": "available",
+      "domain": "flow_level"
+    },
+    {
+      "feature_name": "flow_iat_max",
+      "canonical_feature": "flow_iat_max",
+      "ctu13_source_field": null,
+      "derivation_type": "unavailable_netflow_requires_pcap",
+      "status": "unavailable_in_netflow",
+      "domain": "flow_level"
+    },
+    {
+      "feature_name": "flow_iat_mean",
+      "canonical_feature": "flow_iat_mean",
+      "ctu13_source_field": null,
+      "derivation_type": "unavailable_netflow_requires_pcap",
+      "status": "unavailable_in_netflow",
+      "domain": "flow_level"
+    },
+    {
+      "feature_name": "flow_iat_min",
+      "canonical_feature": "flow_iat_min",
+      "ctu13_source_field": null,
+      "derivation_type": "unavailable_netflow_requires_pcap",
+      "status": "unavailable_in_netflow",
+      "domain": "flow_level"
+    },
+    {
+      "feature_name": "flow_iat_std",
+      "canonical_feature": "flow_iat_std",
+      "ctu13_source_field": null,
+      "derivation_type": "unavailable_netflow_requires_pcap",
+      "status": "unavailable_in_netflow",
+      "domain": "flow_level"
+    },
+    {
+      "feature_name": "flow_iat_total",
+      "canonical_feature": "flow_iat_total",
+      "ctu13_source_field": "Dur (converted to us)",
+      "derivation_type": "direct",
+      "status": "available",
+      "domain": "flow_level"
+    },
+    {
+      "feature_name": "flow_packets_per_s",
+      "canonical_feature": "flow_packets_per_s",
+      "ctu13_source_field": "TotPkts / Dur",
+      "derivation_type": "derived",
+      "status": "available",
+      "domain": "flow_level"
+    },
+    {
+      "feature_name": "fwd_avg_bulk_rate",
+      "canonical_feature": "fwd_avg_bulk_rate",
+      "ctu13_source_field": null,
+      "derivation_type": "unavailable_netflow_requires_pcap",
+      "status": "unavailable_in_netflow",
+      "domain": "flow_level"
+    },
+    {
+      "feature_name": "fwd_avg_bytes_per_bulk",
+      "canonical_feature": "fwd_avg_bytes_per_bulk",
+      "ctu13_source_field": null,
+      "derivation_type": "unavailable_netflow_requires_pcap",
+      "status": "unavailable_in_netflow",
+      "domain": "flow_level"
+    },
+    {
+      "feature_name": "fwd_avg_pkts_per_bulk",
+      "canonical_feature": "fwd_avg_pkts_per_bulk",
+      "ctu13_source_field": null,
+      "derivation_type": "unavailable_netflow_requires_pcap",
+      "status": "unavailable_in_netflow",
+      "domain": "flow_level"
+    },
+    {
+      "feature_name": "fwd_bytes_per_s",
+      "canonical_feature": "fwd_bytes_per_s",
+      "ctu13_source_field": "SrcBytes / Dur",
+      "derivation_type": "derived",
+      "status": "available",
+      "domain": "flow_level"
+    },
+    {
+      "feature_name": "fwd_header_length",
+      "canonical_feature": "fwd_header_length",
+      "ctu13_source_field": null,
+      "derivation_type": "unavailable_netflow_requires_pcap",
+      "status": "unavailable_in_netflow",
+      "domain": "flow_level"
+    },
+    {
+      "feature_name": "fwd_iat_max",
+      "canonical_feature": "fwd_iat_max",
+      "ctu13_source_field": null,
+      "derivation_type": "unavailable_netflow_requires_pcap",
+      "status": "unavailable_in_netflow",
+      "domain": "flow_level"
+    },
+    {
+      "feature_name": "fwd_iat_mean",
+      "canonical_feature": "fwd_iat_mean",
+      "ctu13_source_field": null,
+      "derivation_type": "unavailable_netflow_requires_pcap",
+      "status": "unavailable_in_netflow",
+      "domain": "flow_level"
+    },
+    {
+      "feature_name": "fwd_iat_min",
+      "canonical_feature": "fwd_iat_min",
+      "ctu13_source_field": null,
+      "derivation_type": "unavailable_netflow_requires_pcap",
+      "status": "unavailable_in_netflow",
+      "domain": "flow_level"
+    },
+    {
+      "feature_name": "fwd_iat_std",
+      "canonical_feature": "fwd_iat_std",
+      "ctu13_source_field": null,
+      "derivation_type": "unavailable_netflow_requires_pcap",
+      "status": "unavailable_in_netflow",
+      "domain": "flow_level"
+    },
+    {
+      "feature_name": "fwd_iat_total",
+      "canonical_feature": "fwd_iat_total",
+      "ctu13_source_field": null,
+      "derivation_type": "unavailable_netflow_requires_pcap",
+      "status": "unavailable_in_netflow",
+      "domain": "flow_level"
+    },
+    {
+      "feature_name": "fwd_pkt_len_max",
+      "canonical_feature": "fwd_pkt_len_max",
+      "ctu13_source_field": "SrcBytes / FwdPkts",
+      "derivation_type": "derived",
+      "status": "available",
+      "domain": "flow_level"
+    },
+    {
+      "feature_name": "fwd_pkt_len_mean",
+      "canonical_feature": "fwd_pkt_len_mean",
+      "ctu13_source_field": "SrcBytes / FwdPkts",
+      "derivation_type": "derived",
+      "status": "available",
+      "domain": "flow_level"
+    },
+    {
+      "feature_name": "fwd_pkt_len_min",
+      "canonical_feature": "fwd_pkt_len_min",
+      "ctu13_source_field": "SrcBytes / FwdPkts",
+      "derivation_type": "derived",
+      "status": "available",
+      "domain": "flow_level"
+    },
+    {
+      "feature_name": "fwd_pkt_len_skew",
+      "canonical_feature": "fwd_pkt_len_skew",
+      "ctu13_source_field": null,
+      "derivation_type": "unavailable_netflow_requires_pcap",
+      "status": "unavailable_in_netflow",
+      "domain": "flow_level"
+    },
+    {
+      "feature_name": "fwd_pkt_len_std",
+      "canonical_feature": "fwd_pkt_len_std",
+      "ctu13_source_field": null,
+      "derivation_type": "unavailable_netflow_requires_pcap",
+      "status": "unavailable_in_netflow",
+      "domain": "flow_level"
+    },
+    {
+      "feature_name": "fwd_pkt_len_var",
+      "canonical_feature": "fwd_pkt_len_var",
+      "ctu13_source_field": null,
+      "derivation_type": "unavailable_netflow_requires_pcap",
+      "status": "unavailable_in_netflow",
+      "domain": "flow_level"
+    },
+    {
+      "feature_name": "fwd_psh_flags",
+      "canonical_feature": "fwd_psh_flags",
+      "ctu13_source_field": "psh_flag_cnt",
+      "derivation_type": "derived",
+      "status": "available",
+      "domain": "flow_level"
+    },
+    {
+      "feature_name": "fwd_urg_flags",
+      "canonical_feature": "fwd_urg_flags",
+      "ctu13_source_field": "urg_flag_cnt",
+      "derivation_type": "derived",
+      "status": "available",
+      "domain": "flow_level"
+    },
+    {
+      "feature_name": "idle_max",
+      "canonical_feature": "idle_max",
+      "ctu13_source_field": null,
+      "derivation_type": "unavailable_netflow_requires_pcap",
+      "status": "unavailable_in_netflow",
+      "domain": "flow_level"
+    },
+    {
+      "feature_name": "idle_mean",
+      "canonical_feature": "idle_mean",
+      "ctu13_source_field": null,
+      "derivation_type": "unavailable_netflow_requires_pcap",
+      "status": "unavailable_in_netflow",
+      "domain": "flow_level"
+    },
+    {
+      "feature_name": "idle_min",
+      "canonical_feature": "idle_min",
+      "ctu13_source_field": null,
+      "derivation_type": "unavailable_netflow_requires_pcap",
+      "status": "unavailable_in_netflow",
+      "domain": "flow_level"
+    },
+    {
+      "feature_name": "idle_std",
+      "canonical_feature": "idle_std",
+      "ctu13_source_field": null,
+      "derivation_type": "unavailable_netflow_requires_pcap",
+      "status": "unavailable_in_netflow",
+      "domain": "flow_level"
+    },
+    {
+      "feature_name": "pkt_len_max",
+      "canonical_feature": "pkt_len_max",
+      "ctu13_source_field": "TotBytes / TotPkts (upper bound)",
+      "derivation_type": "derived",
+      "status": "available",
+      "domain": "flow_level"
+    },
+    {
+      "feature_name": "pkt_len_mean",
+      "canonical_feature": "pkt_len_mean",
+      "ctu13_source_field": "TotBytes / TotPkts",
+      "derivation_type": "derived",
+      "status": "available",
+      "domain": "flow_level"
+    },
+    {
+      "feature_name": "pkt_len_min",
+      "canonical_feature": "pkt_len_min",
+      "ctu13_source_field": "TotBytes / TotPkts (lower bound)",
+      "derivation_type": "derived",
+      "status": "available",
+      "domain": "flow_level"
+    },
+    {
+      "feature_name": "pkt_len_skew",
+      "canonical_feature": "pkt_len_skew",
+      "ctu13_source_field": null,
+      "derivation_type": "unavailable_netflow_requires_pcap",
+      "status": "unavailable_in_netflow",
+      "domain": "flow_level"
+    },
+    {
+      "feature_name": "pkt_len_std",
+      "canonical_feature": "pkt_len_std",
+      "ctu13_source_field": null,
+      "derivation_type": "unavailable_netflow_requires_pcap",
+      "status": "unavailable_in_netflow",
+      "domain": "flow_level"
+    },
+    {
+      "feature_name": "pkt_len_var",
+      "canonical_feature": "pkt_len_var",
+      "ctu13_source_field": null,
+      "derivation_type": "unavailable_netflow_requires_pcap",
+      "status": "unavailable_in_netflow",
+      "domain": "flow_level"
+    },
+    {
+      "feature_name": "protocol",
+      "canonical_feature": "protocol",
+      "ctu13_source_field": "Proto",
+      "derivation_type": "direct",
+      "status": "available",
+      "domain": "flow_level"
+    },
+    {
+      "feature_name": "psh_flag_cnt",
+      "canonical_feature": "psh_flag_cnt",
+      "ctu13_source_field": "State (P/PSH substring)",
+      "derivation_type": "direct",
+      "status": "available",
+      "domain": "flow_level"
+    },
+    {
+      "feature_name": "rst_flag_cnt",
+      "canonical_feature": "rst_flag_cnt",
+      "ctu13_source_field": "State (R/RST substring)",
+      "derivation_type": "direct",
+      "status": "available",
+      "domain": "flow_level"
+    },
+    {
+      "feature_name": "src_port",
+      "canonical_feature": "src_port",
+      "ctu13_source_field": "Sport",
+      "derivation_type": "direct",
+      "status": "available",
+      "domain": "flow_level"
+    },
+    {
+      "feature_name": "subflow_bwd_bytes",
+      "canonical_feature": "subflow_bwd_bytes",
+      "ctu13_source_field": "TotBytes - SrcBytes",
+      "derivation_type": "direct",
+      "status": "available",
+      "domain": "flow_level"
+    },
+    {
+      "feature_name": "subflow_bwd_packets",
+      "canonical_feature": "subflow_bwd_packets",
+      "ctu13_source_field": "TotPkts * 0.5",
+      "derivation_type": "direct",
+      "status": "available",
+      "domain": "flow_level"
+    },
+    {
+      "feature_name": "subflow_fwd_bytes",
+      "canonical_feature": "subflow_fwd_bytes",
+      "ctu13_source_field": "SrcBytes",
+      "derivation_type": "direct",
+      "status": "available",
+      "domain": "flow_level"
+    },
+    {
+      "feature_name": "subflow_fwd_packets",
+      "canonical_feature": "subflow_fwd_packets",
+      "ctu13_source_field": "TotPkts * 0.5",
+      "derivation_type": "direct",
+      "status": "available",
+      "domain": "flow_level"
+    },
+    {
+      "feature_name": "syn_flag_cnt",
+      "canonical_feature": "syn_flag_cnt",
+      "ctu13_source_field": "State (S/SYN substring)",
+      "derivation_type": "direct",
+      "status": "available",
+      "domain": "flow_level"
+    },
+    {
+      "feature_name": "tot_bwd_bytes",
+      "canonical_feature": "tot_bwd_bytes",
+      "ctu13_source_field": "TotBytes - SrcBytes",
+      "derivation_type": "direct",
+      "status": "available",
+      "domain": "flow_level"
+    },
+    {
+      "feature_name": "tot_bwd_pkts",
+      "canonical_feature": "tot_bwd_pkts",
+      "ctu13_source_field": "TotPkts * 0.5 (split)",
+      "derivation_type": "direct",
+      "status": "available",
+      "domain": "flow_level"
+    },
+    {
+      "feature_name": "tot_fwd_bytes",
+      "canonical_feature": "tot_fwd_bytes",
+      "ctu13_source_field": "SrcBytes",
+      "derivation_type": "direct",
+      "status": "available",
+      "domain": "flow_level"
+    },
+    {
+      "feature_name": "tot_fwd_pkts",
+      "canonical_feature": "tot_fwd_pkts",
+      "ctu13_source_field": "TotPkts * 0.5 (split)",
+      "derivation_type": "direct",
+      "status": "available",
+      "domain": "flow_level"
+    },
+    {
+      "feature_name": "urg_flag_cnt",
+      "canonical_feature": "urg_flag_cnt",
+      "ctu13_source_field": "State (U/URG substring)",
+      "derivation_type": "direct",
+      "status": "available",
+      "domain": "flow_level"
+    }
+  ],
+  "packet_feature_mapping": [
+    {
+      "packet_feature_name": "bwd_tcp_retrans_count",
+      "status": "available_with_pcap",
+      "ctu13_source": "PCAP capture",
+      "derivation_module": "shield_rca.telemetry.packet_features"
+    },
+    {
+      "packet_feature_name": "bwd_ttl_mean",
+      "status": "available_with_pcap",
+      "ctu13_source": "PCAP capture",
+      "derivation_module": "shield_rca.telemetry.packet_features"
+    },
+    {
+      "packet_feature_name": "fwd_tcp_retrans_count",
+      "status": "available_with_pcap",
+      "ctu13_source": "PCAP capture",
+      "derivation_module": "shield_rca.telemetry.packet_features"
+    },
+    {
+      "packet_feature_name": "fwd_ttl_mean",
+      "status": "available_with_pcap",
+      "ctu13_source": "PCAP capture",
+      "derivation_module": "shield_rca.telemetry.packet_features"
+    },
+    {
+      "packet_feature_name": "packet_iat_jitter",
+      "status": "available_with_pcap",
+      "ctu13_source": "PCAP capture",
+      "derivation_module": "shield_rca.telemetry.packet_features"
+    },
+    {
+      "packet_feature_name": "packet_iat_max",
+      "status": "available_with_pcap",
+      "ctu13_source": "PCAP capture",
+      "derivation_module": "shield_rca.telemetry.packet_features"
+    },
+    {
+      "packet_feature_name": "packet_iat_mean",
+      "status": "available_with_pcap",
+      "ctu13_source": "PCAP capture",
+      "derivation_module": "shield_rca.telemetry.packet_features"
+    },
+    {
+      "packet_feature_name": "packet_iat_min",
+      "status": "available_with_pcap",
+      "ctu13_source": "PCAP capture",
+      "derivation_module": "shield_rca.telemetry.packet_features"
+    },
+    {
+      "packet_feature_name": "packet_iat_p50",
+      "status": "available_with_pcap",
+      "ctu13_source": "PCAP capture",
+      "derivation_module": "shield_rca.telemetry.packet_features"
+    },
+    {
+      "packet_feature_name": "packet_iat_p95",
+      "status": "available_with_pcap",
+      "ctu13_source": "PCAP capture",
+      "derivation_module": "shield_rca.telemetry.packet_features"
+    },
+    {
+      "packet_feature_name": "packet_iat_std",
+      "status": "available_with_pcap",
+      "ctu13_source": "PCAP capture",
+      "derivation_module": "shield_rca.telemetry.packet_features"
+    },
+    {
+      "packet_feature_name": "tcp_retransmission_count",
+      "status": "available_with_pcap",
+      "ctu13_source": "PCAP capture",
+      "derivation_module": "shield_rca.telemetry.packet_features"
+    },
+    {
+      "packet_feature_name": "tcp_retransmission_rate",
+      "status": "available_with_pcap",
+      "ctu13_source": "PCAP capture",
+      "derivation_module": "shield_rca.telemetry.packet_features"
+    },
+    {
+      "packet_feature_name": "ttl_max",
+      "status": "available_with_pcap",
+      "ctu13_source": "PCAP capture",
+      "derivation_module": "shield_rca.telemetry.packet_features"
+    },
+    {
+      "packet_feature_name": "ttl_mean",
+      "status": "available_with_pcap",
+      "ctu13_source": "PCAP capture",
+      "derivation_module": "shield_rca.telemetry.packet_features"
+    },
+    {
+      "packet_feature_name": "ttl_min",
+      "status": "available_with_pcap",
+      "ctu13_source": "PCAP capture",
+      "derivation_module": "shield_rca.telemetry.packet_features"
+    },
+    {
+      "packet_feature_name": "ttl_range",
+      "status": "available_with_pcap",
+      "ctu13_source": "PCAP capture",
+      "derivation_module": "shield_rca.telemetry.packet_features"
+    },
+    {
+      "packet_feature_name": "ttl_std",
+      "status": "available_with_pcap",
+      "ctu13_source": "PCAP capture",
+      "derivation_module": "shield_rca.telemetry.packet_features"
+    }
+  ],
+  "architectural_guarantee": "When NetFlow (.binetflow) files are loaded, unavailable statistical features are zero-filled cleanly, producing an exact R^78 representation. NetworkStateEncoder converts this into R^280 deterministic Network State vectors without dimension loss."
+}

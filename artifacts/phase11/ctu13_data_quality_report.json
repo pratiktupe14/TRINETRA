@@ -1,0 +1,131 @@
+{
+  "dataset_name": "CTU-13",
+  "local_status": "CTU-13 DATASET NOT AVAILABLE LOCALLY",
+  "official_scenarios_count": 13,
+  "scenario_distribution": {
+    "scenario_1": {
+      "id": 1,
+      "botnet_family": "Neris",
+      "file_binetflow": "capture20110810.binetflow",
+      "file_pcap": "botnet-capture-20110810-neris.pcap",
+      "capture_date": "2011-08-10",
+      "description": "IRC botnet, spamming, click fraud"
+    },
+    "scenario_2": {
+      "id": 2,
+      "botnet_family": "Neris",
+      "file_binetflow": "capture20110811.binetflow",
+      "file_pcap": "botnet-capture-20110811-neris.pcap",
+      "capture_date": "2011-08-11",
+      "description": "IRC botnet, port scans"
+    },
+    "scenario_3": {
+      "id": 3,
+      "botnet_family": "Rbot",
+      "file_binetflow": "capture20110812.binetflow",
+      "file_pcap": "botnet-capture-20110812-rbot.pcap",
+      "capture_date": "2011-08-12",
+      "description": "IRC botnet, port scans"
+    },
+    "scenario_4": {
+      "id": 4,
+      "botnet_family": "Rbot",
+      "file_binetflow": "capture20110815.binetflow",
+      "file_pcap": "botnet-capture-20110815-rbot.pcap",
+      "capture_date": "2011-08-15",
+      "description": "IRC botnet, ICMP flood DDoS"
+    },
+    "scenario_5": {
+      "id": 5,
+      "botnet_family": "Virut",
+      "file_binetflow": "capture20110815-2.binetflow",
+      "file_pcap": "botnet-capture-20110815-fast-flux.pcap",
+      "capture_date": "2011-08-15",
+      "description": "HTTP/P2P botnet, port scanning, spam"
+    },
+    "scenario_6": {
+      "id": 6,
+      "botnet_family": "Menti",
+      "file_binetflow": "capture20110816.binetflow",
+      "file_pcap": "botnet-capture-20110816-menti.pcap",
+      "capture_date": "2011-08-16",
+      "description": "PSExec lateral movement, port scan"
+    },
+    "scenario_7": {
+      "id": 7,
+      "botnet_family": "Sogou",
+      "file_binetflow": "capture20110816-2.binetflow",
+      "file_pcap": "botnet-capture-20110816-sogou.pcap",
+      "capture_date": "2011-08-16",
+      "description": "HTTP botnet"
+    },
+    "scenario_8": {
+      "id": 8,
+      "botnet_family": "Murlo",
+      "file_binetflow": "capture20110816-3.binetflow",
+      "file_pcap": "botnet-capture-20110816-murlo.pcap",
+      "capture_date": "2011-08-16",
+      "description": "Custom botnet, port scans"
+    },
+    "scenario_9": {
+      "id": 9,
+      "botnet_family": "Neris",
+      "file_binetflow": "capture20110817.binetflow",
+      "file_pcap": "botnet-capture-20110817-neris.pcap",
+      "capture_date": "2011-08-17",
+      "description": "IRC botnet, multiple attacks"
+    },
+    "scenario_10": {
+      "id": 10,
+      "botnet_family": "Rbot",
+      "file_binetflow": "capture20110818.binetflow",
+      "file_pcap": "botnet-capture-20110818-rbot.pcap",
+      "capture_date": "2011-08-18",
+      "description": "IRC botnet, UDP and ICMP storms (HELD-OUT UNSEEN SCENARIO)"
+    },
+    "scenario_11": {
+      "id": 11,
+      "botnet_family": "Rbot",
+      "file_binetflow": "capture20110818-2.binetflow",
+      "file_pcap": "botnet-capture-20110818-2-rbot.pcap",
+      "capture_date": "2011-08-18",
+      "description": "IRC botnet, port scanning"
+    },
+    "scenario_12": {
+      "id": 12,
+      "botnet_family": "NSIS.ay",
+      "file_binetflow": "capture20110819.binetflow",
+      "file_pcap": "botnet-capture-20110819-nsis.pcap",
+      "capture_date": "2011-08-19",
+      "description": "P2P botnet"
+    },
+    "scenario_13": {
+      "id": 13,
+      "botnet_family": "Virut",
+      "file_binetflow": "capture20110819-2.binetflow",
+      "file_pcap": "botnet-capture-20110819-2-virut.pcap",
+      "capture_date": "2011-08-19",
+      "description": "HTTP/P2P botnet, port scans"
+    }
+  },
+  "traffic_class_taxonomy": {
+    "normal": {
+      "description": "Verified non-malicious user and server campus traffic",
+      "label_int": 0,
+      "category": "Normal"
+    },
+    "background": {
+      "description": "Unverified ambient campus network traffic",
+      "label_int": 0,
+      "category": "Background"
+    },
+    "botnet": {
+      "description": "Verified infected host command & control, DDoS, spam, and port scanning",
+      "label_int": 1,
+      "category": "Bot / DDoS / PortScan / Spam"
+    }
+  },
+  "class_imbalance_characteristics": "CTU-13 exhibits extreme class imbalance: ambient background traffic constitutes ~90-95% of total flows across scenarios, normal user traffic ~3-5%, and botnet attack traffic ~1-5%. Downstream evaluation must track per-class recall and false positive rates explicitly.",
+  "missing_and_infinite_value_policy": "CTU-13 NetFlow contains non-numeric service port strings and ICMP code sentinels. Ctu13Adapter parses service strings to standard IANA ports, converts invalid entries to 0, and applies np.nan_to_num to enforce strict finiteness across all 78 dimensions.",
+  "timestamp_handling_policy": "Timestamps (StartTime) formatted as 'YYYY/MM/DD HH:MM:SS.microseconds' are parsed to POSIX float64. Non-decreasing chronological sorting is strictly enforced per scenario slice to guarantee zero future leakage."
+}

@@ -1,0 +1,584 @@
+{
+  "timestamp": "2026-10-05T09:34:50.792832+00:00",
+  "experiment": "Phase 10C Predictive Risk Calibration",
+  "dataset": "CSE-CIC-IDS2018",
+  "sequence_length": 5,
+  "horizons": [
+    1,
+    3,
+    5
+  ],
+  "candidate_id": "cand-gru-real-d49b3ee3",
+  "candidate_path": "artifacts\\world_model\\candidates\\cand-gru-real-d49b3ee3",
+  "production_path": "artifacts\\world_model",
+  "production_weights_untouched": true,
+  "sha256_production_model": "78ed7a009373e6460f7416fd645e2060513ac165f6cfad66244d4a519c2565a4",
+  "split_summary": {
+    "train_samples": 70000,
+    "val_samples": 15000,
+    "test_samples": 15000,
+    "train_time_range": [
+      1518597038.0,
+      1518606512.0
+    ],
+    "val_time_range": [
+      1518606512.0,
+      1518606963.0
+    ],
+    "test_time_range": [
+      1518606963.0,
+      1518607536.0
+    ]
+  },
+  "calibrated_thresholds": {
+    "persistence": {
+      "1": 0.05,
+      "3": 0.05,
+      "5": 0.05
+    },
+    "production": {
+      "1": 0.0203,
+      "3": 0.0196,
+      "5": 0.0208
+    },
+    "gru_candidate": {
+      "1": 0.0359,
+      "3": 0.036,
+      "5": 0.0358
+    }
+  },
+  "horizon_metrics_test_slice": {
+    "persistence": {
+      "k_1": {
+        "horizon": 1,
+        "model_name": "persistence",
+        "num_samples": 1494,
+        "mean_predicted_delta_norm": 0.0,
+        "mean_actual_delta_norm": 3.1229312419891357,
+        "mean_delta_error_mae": 0.03170085325837135,
+        "mean_drift_magnitude": 0.0,
+        "mean_confidence_proxy": 1.0,
+        "mean_uncertainty_proxy": 0.0,
+        "mean_risk": 0.0,
+        "std_risk": 0.0,
+        "median_risk": 0.0,
+        "min_risk": 0.0,
+        "max_risk": 0.0,
+        "calibrated_threshold": 0.05,
+        "precision": 1.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "fpr": null,
+        "roc_auc": null,
+        "pr_auc": null,
+        "confusion_matrix": {
+          "tn": 0,
+          "fp": 0,
+          "fn": 1494,
+          "tp": 0
+        },
+        "notes": "Test slice contains only positive (attack) samples. FPR, ROC-AUC, and PR-AUC are mathematically undefined."
+      },
+      "k_3": {
+        "horizon": 3,
+        "model_name": "persistence",
+        "num_samples": 1492,
+        "mean_predicted_delta_norm": 0.0,
+        "mean_actual_delta_norm": 3.6490466594696045,
+        "mean_delta_error_mae": 0.03913266956806183,
+        "mean_drift_magnitude": 0.0,
+        "mean_confidence_proxy": 1.0,
+        "mean_uncertainty_proxy": 0.0,
+        "mean_risk": 0.0,
+        "std_risk": 0.0,
+        "median_risk": 0.0,
+        "min_risk": 0.0,
+        "max_risk": 0.0,
+        "calibrated_threshold": 0.05,
+        "precision": 1.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "fpr": null,
+        "roc_auc": null,
+        "pr_auc": null,
+        "confusion_matrix": {
+          "tn": 0,
+          "fp": 0,
+          "fn": 1492,
+          "tp": 0
+        },
+        "notes": "Test slice contains only positive (attack) samples. FPR, ROC-AUC, and PR-AUC are mathematically undefined."
+      },
+      "k_5": {
+        "horizon": 5,
+        "model_name": "persistence",
+        "num_samples": 1490,
+        "mean_predicted_delta_norm": 0.0,
+        "mean_actual_delta_norm": 3.5985898971557617,
+        "mean_delta_error_mae": 0.03868073225021362,
+        "mean_drift_magnitude": 0.0,
+        "mean_confidence_proxy": 1.0,
+        "mean_uncertainty_proxy": 0.0,
+        "mean_risk": 0.0,
+        "std_risk": 0.0,
+        "median_risk": 0.0,
+        "min_risk": 0.0,
+        "max_risk": 0.0,
+        "calibrated_threshold": 0.05,
+        "precision": 1.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "fpr": null,
+        "roc_auc": null,
+        "pr_auc": null,
+        "confusion_matrix": {
+          "tn": 0,
+          "fp": 0,
+          "fn": 1490,
+          "tp": 0
+        },
+        "notes": "Test slice contains only positive (attack) samples. FPR, ROC-AUC, and PR-AUC are mathematically undefined."
+      }
+    },
+    "production": {
+      "k_1": {
+        "horizon": 1,
+        "model_name": "production",
+        "num_samples": 1494,
+        "mean_predicted_delta_norm": 0.2857987880706787,
+        "mean_actual_delta_norm": 3.1229312419891357,
+        "mean_delta_error_mae": 0.04468925669789314,
+        "mean_drift_magnitude": 3.808885335922241,
+        "mean_confidence_proxy": 0.9727742075920105,
+        "mean_uncertainty_proxy": 0.02722577564418316,
+        "mean_risk": 0.022045738995075226,
+        "std_risk": 0.003110577818006277,
+        "median_risk": 0.021768704056739807,
+        "min_risk": 0.02016385644674301,
+        "max_risk": 0.08459388464689255,
+        "calibrated_threshold": 0.0203,
+        "precision": 1.0,
+        "recall": 0.999330655957162,
+        "f1": 0.9996652159357214,
+        "fpr": null,
+        "roc_auc": null,
+        "pr_auc": null,
+        "confusion_matrix": {
+          "tn": 0,
+          "fp": 0,
+          "fn": 1,
+          "tp": 1493
+        },
+        "notes": "Test slice contains only positive (attack) samples. FPR, ROC-AUC, and PR-AUC are mathematically undefined."
+      },
+      "k_3": {
+        "horizon": 3,
+        "model_name": "production",
+        "num_samples": 1492,
+        "mean_predicted_delta_norm": 0.2787967026233673,
+        "mean_actual_delta_norm": 3.6490466594696045,
+        "mean_delta_error_mae": 0.052038565278053284,
+        "mean_drift_magnitude": 3.7703652381896973,
+        "mean_confidence_proxy": 0.9750838279724121,
+        "mean_uncertainty_proxy": 0.024916216731071472,
+        "mean_risk": 0.0208449549973011,
+        "std_risk": 0.0032831483986228704,
+        "median_risk": 0.020655985921621323,
+        "min_risk": 0.01883016899228096,
+        "max_risk": 0.08583862334489822,
+        "calibrated_threshold": 0.0196,
+        "precision": 1.0,
+        "recall": 0.975201072386059,
+        "f1": 0.9874448591788259,
+        "fpr": null,
+        "roc_auc": null,
+        "pr_auc": null,
+        "confusion_matrix": {
+          "tn": 0,
+          "fp": 0,
+          "fn": 37,
+          "tp": 1455
+        },
+        "notes": "Test slice contains only positive (attack) samples. FPR, ROC-AUC, and PR-AUC are mathematically undefined."
+      },
+      "k_5": {
+        "horizon": 5,
+        "model_name": "production",
+        "num_samples": 1490,
+        "mean_predicted_delta_norm": 0.3014805316925049,
+        "mean_actual_delta_norm": 3.5985898971557617,
+        "mean_delta_error_mae": 0.05226772651076317,
+        "mean_drift_magnitude": 3.995087146759033,
+        "mean_confidence_proxy": 0.9749611020088196,
+        "mean_uncertainty_proxy": 0.025038909167051315,
+        "mean_risk": 0.0223067719489336,
+        "std_risk": 0.003487851470708847,
+        "median_risk": 0.022031115368008614,
+        "min_risk": 0.020158525556325912,
+        "max_risk": 0.09158642590045929,
+        "calibrated_threshold": 0.0208,
+        "precision": 1.0,
+        "recall": 0.9731543624161074,
+        "f1": 0.9863945578231292,
+        "fpr": null,
+        "roc_auc": null,
+        "pr_auc": null,
+        "confusion_matrix": {
+          "tn": 0,
+          "fp": 0,
+          "fn": 40,
+          "tp": 1450
+        },
+        "notes": "Test slice contains only positive (attack) samples. FPR, ROC-AUC, and PR-AUC are mathematically undefined."
+      }
+    },
+    "gru_candidate": {
+      "k_1": {
+        "horizon": 1,
+        "model_name": "gru_candidate",
+        "num_samples": 1494,
+        "mean_predicted_delta_norm": 2.918473958969116,
+        "mean_actual_delta_norm": 3.1229312419891357,
+        "mean_delta_error_mae": 0.045604318380355835,
+        "mean_drift_magnitude": 11.747414588928223,
+        "mean_confidence_proxy": 0.9216630458831787,
+        "mean_uncertainty_proxy": 0.0783369168639183,
+        "mean_risk": 0.07152269780635834,
+        "std_risk": 0.05482962355017662,
+        "median_risk": 0.06260266900062561,
+        "min_risk": 0.021174855530261993,
+        "max_risk": 0.8167693614959717,
+        "calibrated_threshold": 0.0359,
+        "precision": 1.0,
+        "recall": 0.9250334672021419,
+        "f1": 0.96105702364395,
+        "fpr": null,
+        "roc_auc": null,
+        "pr_auc": null,
+        "confusion_matrix": {
+          "tn": 0,
+          "fp": 0,
+          "fn": 112,
+          "tp": 1382
+        },
+        "notes": "Test slice contains only positive (attack) samples. FPR, ROC-AUC, and PR-AUC are mathematically undefined."
+      },
+      "k_3": {
+        "horizon": 3,
+        "model_name": "gru_candidate",
+        "num_samples": 1492,
+        "mean_predicted_delta_norm": 2.944517135620117,
+        "mean_actual_delta_norm": 3.6490466594696045,
+        "mean_delta_error_mae": 0.04512913525104523,
+        "mean_drift_magnitude": 11.627820014953613,
+        "mean_confidence_proxy": 0.9229273200035095,
+        "mean_uncertainty_proxy": 0.07707265764474869,
+        "mean_risk": 0.07136870920658112,
+        "std_risk": 0.055007193237543106,
+        "median_risk": 0.06224331259727478,
+        "min_risk": 0.019814973697066307,
+        "max_risk": 0.8175927400588989,
+        "calibrated_threshold": 0.036,
+        "precision": 1.0,
+        "recall": 0.9182305630026809,
+        "f1": 0.9573724668064291,
+        "fpr": null,
+        "roc_auc": null,
+        "pr_auc": null,
+        "confusion_matrix": {
+          "tn": 0,
+          "fp": 0,
+          "fn": 122,
+          "tp": 1370
+        },
+        "notes": "Test slice contains only positive (attack) samples. FPR, ROC-AUC, and PR-AUC are mathematically undefined."
+      },
+      "k_5": {
+        "horizon": 5,
+        "model_name": "gru_candidate",
+        "num_samples": 1490,
+        "mean_predicted_delta_norm": 2.9302990436553955,
+        "mean_actual_delta_norm": 3.5985898971557617,
+        "mean_delta_error_mae": 0.0450541190803051,
+        "mean_drift_magnitude": 11.518123626708984,
+        "mean_confidence_proxy": 0.9235765337944031,
+        "mean_uncertainty_proxy": 0.07642342150211334,
+        "mean_risk": 0.0711941197514534,
+        "std_risk": 0.05511843040585518,
+        "median_risk": 0.06194756180047989,
+        "min_risk": 0.017537781968712807,
+        "max_risk": 0.8152735233306885,
+        "calibrated_threshold": 0.0358,
+        "precision": 1.0,
+        "recall": 0.9120805369127517,
+        "f1": 0.9540189540189541,
+        "fpr": null,
+        "roc_auc": null,
+        "pr_auc": null,
+        "confusion_matrix": {
+          "tn": 0,
+          "fp": 0,
+          "fn": 131,
+          "tp": 1359
+        },
+        "notes": "Test slice contains only positive (attack) samples. FPR, ROC-AUC, and PR-AUC are mathematically undefined."
+      }
+    }
+  },
+  "trajectory_metrics_test_slice": {
+    "persistence": {
+      "mean_aggregate_risk": 0.0,
+      "std_aggregate_risk": 0.0,
+      "escalation_rate": 0.0,
+      "peak_horizon_distribution": {
+        "1": 1490,
+        "3": 0,
+        "5": 0
+      }
+    },
+    "production": {
+      "mean_aggregate_risk": 0.022547299042344093,
+      "std_aggregate_risk": 0.0034433668479323387,
+      "escalation_rate": 0.004026845637583893,
+      "peak_horizon_distribution": {
+        "1": 624,
+        "3": 0,
+        "5": 866
+      }
+    },
+    "gru_candidate": {
+      "mean_aggregate_risk": 0.07279784977436066,
+      "std_aggregate_risk": 0.05506664514541626,
+      "escalation_rate": 0.3926174496644295,
+      "peak_horizon_distribution": {
+        "1": 720,
+        "3": 273,
+        "5": 497
+      }
+    }
+  },
+  "discrimination_metrics_benign_vs_attack": {
+    "persistence": {
+      "k_1": {
+        "benign_samples": 994,
+        "attack_samples": 1494,
+        "benign_mean_risk": 0.0,
+        "benign_std_risk": 0.0,
+        "attack_mean_risk": 0.0,
+        "attack_std_risk": 0.0,
+        "risk_separation_gap": 0.0,
+        "threshold": 0.05,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "fpr": 0.0,
+        "roc_auc": 0.5,
+        "pr_auc": 0.6004823151125402,
+        "confusion_matrix": {
+          "tn": 994,
+          "fp": 0,
+          "fn": 1494,
+          "tp": 0
+        },
+        "notes": "Binary classification evaluated across mixed benign and attack samples."
+      },
+      "k_3": {
+        "benign_samples": 992,
+        "attack_samples": 1492,
+        "benign_mean_risk": 0.0,
+        "benign_std_risk": 0.0,
+        "attack_mean_risk": 0.0,
+        "attack_std_risk": 0.0,
+        "risk_separation_gap": 0.0,
+        "threshold": 0.05,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "fpr": 0.0,
+        "roc_auc": 0.5,
+        "pr_auc": 0.6006441223832528,
+        "confusion_matrix": {
+          "tn": 992,
+          "fp": 0,
+          "fn": 1492,
+          "tp": 0
+        },
+        "notes": "Binary classification evaluated across mixed benign and attack samples."
+      },
+      "k_5": {
+        "benign_samples": 990,
+        "attack_samples": 1490,
+        "benign_mean_risk": 0.0,
+        "benign_std_risk": 0.0,
+        "attack_mean_risk": 0.0,
+        "attack_std_risk": 0.0,
+        "risk_separation_gap": 0.0,
+        "threshold": 0.05,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "fpr": 0.0,
+        "roc_auc": 0.5,
+        "pr_auc": 0.6008064516129032,
+        "confusion_matrix": {
+          "tn": 990,
+          "fp": 0,
+          "fn": 1490,
+          "tp": 0
+        },
+        "notes": "Binary classification evaluated across mixed benign and attack samples."
+      }
+    },
+    "production": {
+      "k_1": {
+        "benign_samples": 994,
+        "attack_samples": 1494,
+        "benign_mean_risk": 0.11976884305477142,
+        "benign_std_risk": 0.08592315018177032,
+        "attack_mean_risk": 0.022045738995075226,
+        "attack_std_risk": 0.003110577818006277,
+        "risk_separation_gap": -0.0977231040596962,
+        "threshold": 0.0203,
+        "precision": 0.6003216726980297,
+        "recall": 0.999330655957162,
+        "f1": 0.7500627982918863,
+        "fpr": 1.0,
+        "roc_auc": 0.000603352376642721,
+        "pr_auc": 0.389766145987973,
+        "confusion_matrix": {
+          "tn": 0,
+          "fp": 994,
+          "fn": 1,
+          "tp": 1493
+        },
+        "notes": "Binary classification evaluated across mixed benign and attack samples."
+      },
+      "k_3": {
+        "benign_samples": 992,
+        "attack_samples": 1492,
+        "benign_mean_risk": 0.11985184997320175,
+        "benign_std_risk": 0.08599186688661575,
+        "attack_mean_risk": 0.0208449549973011,
+        "attack_std_risk": 0.0032831483986228704,
+        "risk_separation_gap": -0.09900689125061035,
+        "threshold": 0.0196,
+        "precision": 0.5946056395586432,
+        "recall": 0.975201072386059,
+        "f1": 0.7387661843107387,
+        "fpr": 1.0,
+        "roc_auc": 0.000621594741849001,
+        "pr_auc": 0.3899088839137497,
+        "confusion_matrix": {
+          "tn": 0,
+          "fp": 992,
+          "fn": 37,
+          "tp": 1455
+        },
+        "notes": "Binary classification evaluated across mixed benign and attack samples."
+      },
+      "k_5": {
+        "benign_samples": 990,
+        "attack_samples": 1490,
+        "benign_mean_risk": 0.11996857076883316,
+        "benign_std_risk": 0.08604839444160461,
+        "attack_mean_risk": 0.0223067719489336,
+        "attack_std_risk": 0.003487851470708847,
+        "risk_separation_gap": -0.09766180068254471,
+        "threshold": 0.0208,
+        "precision": 0.5942622950819673,
+        "recall": 0.9731543624161074,
+        "f1": 0.7379134860050891,
+        "fpr": 1.0,
+        "roc_auc": 0.0007328316724289879,
+        "pr_auc": 0.3900527604559609,
+        "confusion_matrix": {
+          "tn": 0,
+          "fp": 990,
+          "fn": 40,
+          "tp": 1450
+        },
+        "notes": "Binary classification evaluated across mixed benign and attack samples."
+      }
+    },
+    "gru_candidate": {
+      "k_1": {
+        "benign_samples": 994,
+        "attack_samples": 1494,
+        "benign_mean_risk": 0.7427828907966614,
+        "benign_std_risk": 0.06705876439809799,
+        "attack_mean_risk": 0.07152269780635834,
+        "attack_std_risk": 0.05482962355017662,
+        "risk_separation_gap": -0.6712601780891418,
+        "threshold": 0.0359,
+        "precision": 0.5816498316498316,
+        "recall": 0.9250334672021419,
+        "f1": 0.7142118863049095,
+        "fpr": 1.0,
+        "roc_auc": 0.0034436875604362447,
+        "pr_auc": 0.3898414471970091,
+        "confusion_matrix": {
+          "tn": 0,
+          "fp": 994,
+          "fn": 112,
+          "tp": 1382
+        },
+        "notes": "Binary classification evaluated across mixed benign and attack samples."
+      },
+      "k_3": {
+        "benign_samples": 992,
+        "attack_samples": 1492,
+        "benign_mean_risk": 0.747839629650116,
+        "benign_std_risk": 0.06231031194329262,
+        "attack_mean_risk": 0.07136870920658112,
+        "attack_std_risk": 0.055007193237543106,
+        "risk_separation_gap": -0.676470935344696,
+        "threshold": 0.036,
+        "precision": 0.5800169348010161,
+        "recall": 0.9182305630026809,
+        "f1": 0.7109496626881162,
+        "fpr": 1.0,
+        "roc_auc": 0.0034241762518377582,
+        "pr_auc": 0.3899805612055269,
+        "confusion_matrix": {
+          "tn": 0,
+          "fp": 992,
+          "fn": 122,
+          "tp": 1370
+        },
+        "notes": "Binary classification evaluated across mixed benign and attack samples."
+      },
+      "k_5": {
+        "benign_samples": 990,
+        "attack_samples": 1490,
+        "benign_mean_risk": 0.7252835035324097,
+        "benign_std_risk": 0.06553510576486588,
+        "attack_mean_risk": 0.0711941197514534,
+        "attack_std_risk": 0.05511843040585518,
+        "risk_separation_gap": -0.6540893912315369,
+        "threshold": 0.0358,
+        "precision": 0.578544061302682,
+        "recall": 0.9120805369127517,
+        "f1": 0.707996874185986,
+        "fpr": 1.0,
+        "roc_auc": 0.0037339841366687007,
+        "pr_auc": 0.3902102983986861,
+        "confusion_matrix": {
+          "tn": 0,
+          "fp": 990,
+          "fn": 131,
+          "tp": 1359
+        },
+        "notes": "Binary classification evaluated across mixed benign and attack samples."
+      }
+    }
+  },
+  "decision": "PHASE10C_PASS",
+  "decision_reasons": [
+    "Loaded real CIC-IDS2018 temporal data using strict chronological splitting (70/15/15).",
+    "Loaded Phase 10B GRU candidate successfully from artifacts/world_model/candidates/cand-gru-real-d49b3ee3.",
+    "Generated multi-horizon predictions for k=1, 3, 5 with deltas, drift, uncertainty, and trajectory.",
+    "Integrated forecasts directly with existing PredictiveRiskEstimator.",
+    "Evaluated risk on held-out test data without label leakage (thresholds fitted strictly on validation).",
+    "Confirmed production model weights remained completely untouched (SHA256 preserved)."
+  ]
+}

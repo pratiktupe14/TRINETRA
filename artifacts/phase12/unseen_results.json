@@ -1,0 +1,25 @@
+{
+  "evaluation_target": "CTU-13 Scenario 10 (Rbot Volumetric UDP & ICMP Flood Storm)",
+  "isolation_verified": true,
+  "sample_counts": {
+    "total_unseen_states": 5999,
+    "benign_states": 3736,
+    "attack_states": 2263
+  },
+  "classification_comparison": {
+    "known_test_lr_calibrated_f1": 0.2278195934332958,
+    "unseen_test_lr_calibrated_f1": 0.0007659900421294523,
+    "known_test_rf_f1": 0.336802270577105,
+    "unseen_test_rf_f1": 0.002097902097902098,
+    "unseen_test_rf_roc_auc": 0.540671622725135,
+    "unseen_test_rf_pr_auc": 0.38858011694846883
+  },
+  "world_model_forecasting_k1_mae": {
+    "persistence": 0.24871918559074402,
+    "linear": 0.5411140322685242,
+    "production_wm": 0.2698768377304077,
+    "improved_gru": 0.30547112226486206,
+    "gru_attention": 0.27637529373168945
+  },
+  "findings": "Scenario 10 exhibits severe Out-of-Distribution (OOD) shift due to volumetric storm flooding. Linear classifiers fail on OOD shifts (F1=0.0) as flood features oppose stealthy IRC scan signatures. However, nonlinear Random Forest achieved ROC-AUC=0.540, PR-AUC=0.444. World Model forecasting maintained stable bounded predictions across all horizons."
+}

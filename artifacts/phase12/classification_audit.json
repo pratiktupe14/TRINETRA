@@ -1,0 +1,190 @@
+{
+  "audit_name": "Classification Pipeline Root-Cause Audit",
+  "timestamp": "2026-10-05T17:46:53.504375+00:00",
+  "phase11b_baseline": {
+    "known_test_f1": 0.0114,
+    "known_test_precision": 0.0058,
+    "known_test_recall": 0.2979,
+    "known_test_fpr": 0.1336,
+    "unseen_scenario_10_f1": 0.0,
+    "unseen_scenario_10_precision": 0.0,
+    "unseen_scenario_10_recall": 0.0,
+    "unseen_scenario_10_fpr": 0.1077,
+    "unseen_scenario_10_support_attack": 0
+  },
+  "discovered_root_causes": [
+    {
+      "id": "RC-CL-1",
+      "component": "Head-Sampling Truncation (Ctu13Adapter)",
+      "finding": "Phase 11B loaded rows 0 to 30,000 sequentially from the file head. In CTU-13, botnets undergo hours of benign/background setup before active execution. Scenario 10 first attack flow is at index 90,622; top flood storm is at 460,000-530,000. Consequently, the evaluated slice of Scenario 10 had support_attack = 0 (100% benign), mathematically forcing Precision=0, Recall=0, F1=0, and ROC-AUC=NaN.",
+      "severity": "CRITICAL",
+      "remediation": "Enhanced Ctu13Adapter with optional skip_rows parameter to target active attack waves."
+    },
+    {
+      "id": "RC-CL-2",
+      "component": "Heavy-Tailed Variance Dominance & Zero-IQR Fallback",
+      "finding": "In the 280-D state vector, 163 features had IQR = 0.0 on training states. RobustScaler fell back to scale = 1.0 while microsecond duration and byte counters reached up to 3.6e9. These unscaled features dominated gradients by 10^18, pushing weights of critical binary/ratio signals (TCP flags, SYN ratios) toward zero.",
+      "severity": "CRITICAL",
+      "remediation": "Implemented log1p non-negative counter stabilization prior to scaling."
+    },
+    {
+      "id": "RC-CL-3",
+      "component": "Uncalibrated Threshold on Skewed Class Distribution",
+      "finding": "Phase 11B evaluated Logistic Regression at a hardcoded decision threshold of 0.5. With extreme class imbalance and massive feature scaling distortions, the model generated 2,398 false positives against 14 true positives on Known Test.",
+      "severity": "HIGH",
+      "remediation": "Threshold calibration strictly optimized on Validation scenarios (11 & 12)."
+    },
+    {
+      "id": "RC-CL-4",
+      "component": "Validation Set Attack Starvation",
+      "finding": "In Phase 11B, Validation Scenarios 11 & 12 had first botnet flows at 54,001 and 55,370. Head-sampling 30,000 rows produced 0 attack flows in Validation, making validation calibration impossible.",
+      "severity": "HIGH",
+      "remediation": "Validation sampled at active attack offsets, providing positive labels for tuning."
+    }
+  ],
+  "scenario_sampling_audit": {
+    "1": {
+      "scenario_num": 1,
+      "role": "train",
+      "skip_offset": 1700000,
+      "rows_loaded": 30000,
+      "attack_flows": 2064,
+      "attack_flow_pct": 6.88,
+      "state_vectors": 5999,
+      "attack_states": 1376,
+      "attack_state_pct": 22.937156192698783
+    },
+    "2": {
+      "scenario_num": 2,
+      "role": "train",
+      "skip_offset": 450000,
+      "rows_loaded": 30000,
+      "attack_flows": 5181,
+      "attack_flow_pct": 17.27,
+      "state_vectors": 5999,
+      "attack_states": 2686,
+      "attack_state_pct": 44.77412902150358
+    },
+    "3": {
+      "scenario_num": 3,
+      "role": "train",
+      "skip_offset": 1850000,
+      "rows_loaded": 30000,
+      "attack_flows": 1130,
+      "attack_flow_pct": 3.7666666666666666,
+      "state_vectors": 5999,
+      "attack_states": 1703,
+      "attack_state_pct": 28.38806467744624
+    },
+    "4": {
+      "scenario_num": 4,
+      "role": "known_test",
+      "skip_offset": 750000,
+      "rows_loaded": 30000,
+      "attack_flows": 304,
+      "attack_flow_pct": 1.0133333333333332,
+      "state_vectors": 5999,
+      "attack_states": 251,
+      "attack_state_pct": 4.18403067177863
+    },
+    "5": {
+      "scenario_num": 5,
+      "role": "known_test",
+      "skip_offset": 50000,
+      "rows_loaded": 30000,
+      "attack_flows": 223,
+      "attack_flow_pct": 0.7433333333333334,
+      "state_vectors": 5999,
+      "attack_states": 331,
+      "attack_state_pct": 5.517586264377396
+    },
+    "6": {
+      "scenario_num": 6,
+      "role": "train",
+      "skip_offset": 350000,
+      "rows_loaded": 30000,
+      "attack_flows": 290,
+      "attack_flow_pct": 0.9666666666666667,
+      "state_vectors": 5999,
+      "attack_states": 175,
+      "attack_state_pct": 2.9171528588098017
+    },
+    "7": {
+      "scenario_num": 7,
+      "role": "train",
+      "skip_offset": 10000,
+      "rows_loaded": 30000,
+      "attack_flows": 54,
+      "attack_flow_pct": 0.18,
+      "state_vectors": 5999,
+      "attack_states": 55,
+      "attack_state_pct": 0.9168194699116519
+    },
+    "8": {
+      "scenario_num": 8,
+      "role": "train",
+      "skip_offset": 150000,
+      "rows_loaded": 30000,
+      "attack_flows": 205,
+      "attack_flow_pct": 0.6833333333333333,
+      "state_vectors": 5999,
+      "attack_states": 224,
+      "attack_state_pct": 3.7339556592765457
+    },
+    "9": {
+      "scenario_num": 9,
+      "role": "train",
+      "skip_offset": 1800000,
+      "rows_loaded": 30000,
+      "attack_flows": 6658,
+      "attack_flow_pct": 22.193333333333335,
+      "state_vectors": 5999,
+      "attack_states": 4665,
+      "attack_state_pct": 77.76296049341556
+    },
+    "10": {
+      "scenario_num": 10,
+      "role": "unseen_test",
+      "skip_offset": 460000,
+      "rows_loaded": 30000,
+      "attack_flows": 10827,
+      "attack_flow_pct": 36.09,
+      "state_vectors": 5999,
+      "attack_states": 2263,
+      "attack_state_pct": 37.7229538256376
+    },
+    "11": {
+      "scenario_num": 11,
+      "role": "val",
+      "skip_offset": 50000,
+      "rows_loaded": 30000,
+      "attack_flows": 21,
+      "attack_flow_pct": 0.06999999999999999,
+      "state_vectors": 5999,
+      "attack_states": 29,
+      "attack_state_pct": 0.48341390231705283
+    },
+    "12": {
+      "scenario_num": 12,
+      "role": "val",
+      "skip_offset": 50000,
+      "rows_loaded": 30000,
+      "attack_flows": 597,
+      "attack_flow_pct": 1.9900000000000002,
+      "state_vectors": 5999,
+      "attack_states": 552,
+      "attack_state_pct": 9.20153358893149
+    },
+    "13": {
+      "scenario_num": 13,
+      "role": "known_test",
+      "skip_offset": 250000,
+      "rows_loaded": 30000,
+      "attack_flows": 1151,
+      "attack_flow_pct": 3.836666666666667,
+      "state_vectors": 5999,
+      "attack_states": 1484,
+      "attack_state_pct": 24.73745624270712
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "audit_name": "World Model Persistence Collapse Root-Cause Audit",
+  "timestamp": "2026-10-05T17:46:53.506440+00:00",
+  "phase11b_evidence": {
+    "known_test_k1_persistence_mae": 32860.8984,
+    "known_test_k1_production_wm_mae": 32860.914,
+    "mae_delta": 0.0156,
+    "unseen_test_k1_persistence_mae": 2051.0205,
+    "unseen_test_k1_production_wm_mae": 2051.0442
+  },
+  "discovered_root_causes": [
+    {
+      "id": "RC-WM-1",
+      "component": "Synthetic Pretraining vs Real Data Distribution",
+      "finding": "Production model artifacts/world_model/best_model.pt was trained on 120 synthetic normal vectors drawn from N(0, 1) with synthetic sine drift. It never encountered real NetFlow dynamics.",
+      "severity": "CRITICAL",
+      "evidence": "best_model manifest confirms 120 synthetic training samples with MAE ~0.02."
+    },
+    {
+      "id": "RC-WM-2",
+      "component": "Residual State Transition Scale Mismatch",
+      "finding": "The model predicts S_hat_{t+k} = S_t + Delta_S_hat. The delta head was initialized to produce outputs of magnitude ~0.01-0.1. However, raw/improperly normalized real network state features have values up to 38,000 (and raw up to 3.6e9). Because Delta_S_hat << S_t, S_hat_{t+k} ~ S_t, locking the model into Persistence.",
+      "severity": "CRITICAL",
+      "evidence": "Production model prediction differs from Persistence by only 0.0156 on 32,860 MAE."
+    },
+    {
+      "id": "RC-WM-3",
+      "component": "Linear Dynamics Matrix Singularity",
+      "finding": "Due to features spanning 18 orders of magnitude, linear autoregression covariance matrices had condition numbers > 10^16. When inverted, ridge regression produced singular matrix warnings and exploded to MAE > 4.3e7.",
+      "severity": "HIGH",
+      "evidence": "Phase 11B Linear MAE was 43,713,804.0; pytest logs singular matrix warning."
+    }
+  ]
+}

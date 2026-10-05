@@ -1,0 +1,74 @@
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.cert
+*.crt
+id_rsa
+id_ecdsa
+id_ed25519
+
+# Datasets and packet captures (NEVER PUSH)
+data/
+*.pcap
+*.pcapng
+*.binetflow
+*.csv
+*.tsv
+*.parquet
+
+# Large generated candidate models and benchmark caches
+artifacts/real_data_benchmark/
+artifacts/phase*/candidates/
+artifacts/world_model/candidates/
+*.mmap
+cyberheal_ctu_*
+
+# Temporary files and scratch scripts
+tmp/
+temp/
+*_TEMP/
+*_ALL/
+*.tmp
+scratch/
+dist/
+node_modules/
+*.log
+traces/
+test_decorator.py
+test_omium*.py
+blocked_ips.txt
+blockchain.json
+pipeline_state.json
+incident_report_*.json
+trace_export.json
+
+# IDE and OS metadata
+.idea/
+.vscode/
+*.swp
+*.swo
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store

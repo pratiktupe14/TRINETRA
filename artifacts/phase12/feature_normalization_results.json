@@ -1,0 +1,38 @@
+{
+  "comparison_title": "280-D State Normalization Comparison",
+  "timestamp": "2026-10-05T17:46:55.918565+00:00",
+  "strategies": {
+    "raw_unscaled": {
+      "max_abs_value": 3599999488.0,
+      "mean_std": 21219316.0,
+      "condition_number_ratio": 4.0611090971776996e+30,
+      "zero_scale_features": 0
+    },
+    "robust_scaler_baseline": {
+      "max_abs_value": 29999988.0,
+      "mean_std": 10719.73828125,
+      "condition_number_ratio": 8.842228918583362e+24,
+      "zero_scale_features": 164
+    },
+    "standard_scaler": {
+      "max_abs_value": 197.7490234375,
+      "mean_std": 0.4892810881137848,
+      "condition_number_ratio": 21185094807317.496,
+      "zero_scale_features": 0
+    },
+    "log1p_robust_scaler": {
+      "max_abs_value": 84.60293579101562,
+      "mean_std": 0.5539000630378723,
+      "condition_number_ratio": 323041194761974.56,
+      "zero_scale_features": 159
+    },
+    "log1p_standard_scaler_recommended": {
+      "max_abs_value": 24.639217376708984,
+      "mean_std": 0.48928260803222656,
+      "condition_number_ratio": 39909874062801.98,
+      "zero_scale_features": 0
+    }
+  },
+  "selected_strategy": "log1p_standard_scaler",
+  "rationale": "Log1p compresses multi-billion microsecond and byte counters into O(10) values, eliminating heavy-tailed domination while StandardScaler eliminates zero-IQR fallback and conditions covariance eigenvalues."
+}

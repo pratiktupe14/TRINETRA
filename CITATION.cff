@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "SHIELD-RCA — Self-Healing Cyber Networks with Multi-Agent AI"
+authors:
+  - family-names: Ibitoye
+    given-names: Joshua Seyi
+    orcid: "https://orcid.org/0009-0006-2355-5166"
+repository-code: "https://github.com/jsibitoye/SHIELD-RCA"
+license: MIT
+date-released: "2025-08-01"
+version: "0.1.0"

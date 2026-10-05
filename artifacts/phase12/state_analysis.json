@@ -1,0 +1,101 @@
+{
+  "analysis_name": "280-D Network State Group Analysis",
+  "sample_count": 41993,
+  "feature_count": 280,
+  "group_breakdown": {
+    "continuous_traffic_dynamics": {
+      "num_features": 60,
+      "total_variance": 4.942819888050733e+18,
+      "variance_share_pct": 99.67290959799975,
+      "mean_feature_variance": 8.238033318549914e+16,
+      "max_feature_variance": 1.6911226882375025e+18,
+      "dominant_feature_in_group": "flow_duration_us_max"
+    },
+    "tcp_connection_signatures": {
+      "num_features": 60,
+      "total_variance": 1.597551740452864e+16,
+      "variance_share_pct": 0.32214936779151176,
+      "mean_feature_variance": 266258629001216.0,
+      "max_feature_variance": 1.325874657886208e+16,
+      "dominant_feature_in_group": "fwd_bytes_per_s_max"
+    },
+    "distribution_higher_order": {
+      "num_features": 60,
+      "total_variance": 43348995866624.0,
+      "variance_share_pct": 0.0008741408030309622,
+      "mean_feature_variance": 722483281920.0,
+      "max_feature_variance": 16374938206208.0,
+      "dominant_feature_in_group": "subflow_fwd_bytes_max"
+    },
+    "endpoint_protocol_diversity": {
+      "num_features": 60,
+      "total_variance": 1.9118337631225586,
+      "variance_share_pct": 3.8552493951639325e-17,
+      "mean_feature_variance": 0.03186389431357384,
+      "max_feature_variance": 0.29928791522979736,
+      "dominant_feature_in_group": "syn_flag_cnt_delta"
+    },
+    "macro_indicators": {
+      "num_features": 40,
+      "total_variance": 202086583107584.0,
+      "variance_share_pct": 0.0040751146481678435,
+      "mean_feature_variance": 5052164472832.0,
+      "max_feature_variance": 179951647064064.0,
+      "dominant_feature_in_group": "macro_mean_byte_rate"
+    }
+  },
+  "top_dominant_features": [
+    {
+      "index": 42,
+      "name": "flow_duration_us_max",
+      "variance": 1.6911226882375025e+18,
+      "variance_share_pct": 34.10181427001953,
+      "mean": 1210360576.0,
+      "min": 23.0,
+      "max": 3599999488.0
+    },
+    {
+      "index": 57,
+      "name": "flow_iat_total_max",
+      "variance": 1.6911226882375025e+18,
+      "variance_share_pct": 34.10181427001953,
+      "mean": 1210360576.0,
+      "min": 23.0,
+      "max": 3599999488.0
+    },
+    {
+      "index": 58,
+      "name": "flow_iat_total_last",
+      "variance": 4.701941217099776e+17,
+      "variance_share_pct": 9.48155403137207,
+      "mean": 225504624.0,
+      "min": 0.0,
+      "max": 3599998464.0
+    },
+    {
+      "index": 43,
+      "name": "flow_duration_us_last",
+      "variance": 4.701941217099776e+17,
+      "variance_share_pct": 9.48155403137207,
+      "mean": 225504624.0,
+      "min": 0.0,
+      "max": 3599998464.0
+    },
+    {
+      "index": 41,
+      "name": "flow_duration_us_std",
+      "variance": 2.0977773042886246e+17,
+      "variance_share_pct": 4.230207920074463,
+      "mean": 409935520.0,
+      "min": 2.200000047683716,
+      "max": 1744269440.0
+    }
+  ],
+  "top_5_variance_share_pct": 91.39694452285767,
+  "high_volume_traffic_features_dominate": true,
+  "target_delta_mean_l1": {
+    "lag_1": 9832508.0,
+    "lag_3": 15700556.0,
+    "lag_5": 15862535.0
+  }
+}

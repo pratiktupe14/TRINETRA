@@ -1,0 +1,143 @@
+{
+  "dataset_name": "CTU-13",
+  "official_source": "Stratosphere IPS Project, Czech Technical University (CTU), Prague",
+  "official_url": "https://mcfp.felk.cvut.cz/publicDatasets/CTU-13-Dataset/",
+  "local_availability": "NOT AVAILABLE LOCALLY",
+  "searched_paths": [
+    "data/ctu13",
+    "data/CTU-13",
+    "data/ctu_13",
+    "data/",
+    "D:\\sih 2026\\CyberHeal\\data",
+    "D:\\sih 2026",
+    "C:\\Users\\prati\\Downloads"
+  ],
+  "required_placement_directory": "data/ctu13/",
+  "required_formats": [
+    ".binetflow (bidirectional NetFlow)",
+    ".pcap (packet capture)"
+  ],
+  "production_model_path": "artifacts\\world_model\\best_model.pt",
+  "production_model_sha256": "78ed7a009373e6460f7416fd645e2060513ac165f6cfad66244d4a519c2565a4",
+  "production_model_untouched": true,
+  "expected_scenarios_count": 13,
+  "scenarios_metadata": {
+    "scenario_1": {
+      "id": 1,
+      "name": "Neris",
+      "botnet": "Neris",
+      "file": "capture20110810.binetflow",
+      "pcap": "botnet-capture-20110810-neris.pcap",
+      "date": "2011-08-10",
+      "description": "IRC botnet, spamming, click fraud"
+    },
+    "scenario_2": {
+      "id": 2,
+      "name": "Neris",
+      "botnet": "Neris",
+      "file": "capture20110811.binetflow",
+      "pcap": "botnet-capture-20110811-neris.pcap",
+      "date": "2011-08-11",
+      "description": "IRC botnet, port scans"
+    },
+    "scenario_3": {
+      "id": 3,
+      "name": "Rbot",
+      "botnet": "Rbot",
+      "file": "capture20110812.binetflow",
+      "pcap": "botnet-capture-20110812-rbot.pcap",
+      "date": "2011-08-12",
+      "description": "IRC botnet, port scans"
+    },
+    "scenario_4": {
+      "id": 4,
+      "name": "Rbot",
+      "botnet": "Rbot",
+      "file": "capture20110815.binetflow",
+      "pcap": "botnet-capture-20110815-rbot.pcap",
+      "date": "2011-08-15",
+      "description": "IRC botnet, ICMP flood DDoS"
+    },
+    "scenario_5": {
+      "id": 5,
+      "name": "Virut",
+      "botnet": "Virut",
+      "file": "capture20110815-2.binetflow",
+      "pcap": "botnet-capture-20110815-fast-flux.pcap",
+      "date": "2011-08-15",
+      "description": "HTTP/P2P botnet, port scanning, spam"
+    },
+    "scenario_6": {
+      "id": 6,
+      "name": "Menti",
+      "botnet": "Menti",
+      "file": "capture20110816.binetflow",
+      "pcap": "botnet-capture-20110816-menti.pcap",
+      "date": "2011-08-16",
+      "description": "PSExec lateral movement, port scan"
+    },
+    "scenario_7": {
+      "id": 7,
+      "name": "Sogou",
+      "botnet": "Sogou",
+      "file": "capture20110816-2.binetflow",
+      "pcap": "botnet-capture-20110816-sogou.pcap",
+      "date": "2011-08-16",
+      "description": "HTTP botnet"
+    },
+    "scenario_8": {
+      "id": 8,
+      "name": "Murlo",
+      "botnet": "Murlo",
+      "file": "capture20110816-3.binetflow",
+      "pcap": "botnet-capture-20110816-murlo.pcap",
+      "date": "2011-08-16",
+      "description": "Custom botnet, port scans"
+    },
+    "scenario_9": {
+      "id": 9,
+      "name": "Neris",
+      "botnet": "Neris",
+      "file": "capture20110817.binetflow",
+      "pcap": "botnet-capture-20110817-neris.pcap",
+      "date": "2011-08-17",
+      "description": "IRC botnet, multiple attacks"
+    },
+    "scenario_10": {
+      "id": 10,
+      "name": "Rbot",
+      "botnet": "Rbot",
+      "file": "capture20110818.binetflow",
+      "pcap": "botnet-capture-20110818-rbot.pcap",
+      "date": "2011-08-18",
+      "description": "IRC botnet, UDP and ICMP storms (HELD-OUT UNSEEN SCENARIO)"
+    },
+    "scenario_11": {
+      "id": 11,
+      "name": "Rbot",
+      "botnet": "Rbot",
+      "file": "capture20110818-2.binetflow",
+      "pcap": "botnet-capture-20110818-2-rbot.pcap",
+      "date": "2011-08-18",
+      "description": "IRC botnet, port scanning"
+    },
+    "scenario_12": {
+      "id": 12,
+      "name": "NSIS.ay",
+      "botnet": "NSIS.ay",
+      "file": "capture20110819.binetflow",
+      "pcap": "botnet-capture-20110819-nsis.pcap",
+      "date": "2011-08-19",
+      "description": "P2P botnet"
+    },
+    "scenario_13": {
+      "id": 13,
+      "name": "Virut",
+      "botnet": "Virut",
+      "file": "capture20110819-2.binetflow",
+      "pcap": "botnet-capture-20110819-2-virut.pcap",
+      "date": "2011-08-19",
+      "description": "HTTP/P2P botnet, port scans"
+    }
+  }
+}

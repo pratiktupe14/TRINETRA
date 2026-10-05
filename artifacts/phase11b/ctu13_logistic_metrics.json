@@ -1,0 +1,66 @@
+{
+  "train_samples": 41993,
+  "train_attack_samples": 49,
+  "train_benign_samples": 41944,
+  "known_test": {
+    "precision": 0.005804311774461028,
+    "recall": 0.2978723404255319,
+    "f1_score": 0.011386742578283855,
+    "false_positive_rate": 0.1335933147632312,
+    "roc_auc": 0.6395460202690689,
+    "pr_auc": 0.009265868419429234,
+    "tp": 14,
+    "tn": 15552,
+    "fp": 2398,
+    "fn": 33,
+    "support_benign": 17950,
+    "support_attack": 47,
+    "total_samples": 17997,
+    "confusion_matrix": [
+      [
+        15552,
+        2398
+      ],
+      [
+        33,
+        14
+      ]
+    ]
+  },
+  "unseen_test_scenario_10": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1_score": 0.0,
+    "false_positive_rate": 0.10772967566795257,
+    "roc_auc": NaN,
+    "pr_auc": 0.0,
+    "tp": 0,
+    "tn": 6245,
+    "fp": 754,
+    "fn": 0,
+    "support_benign": 6999,
+    "support_attack": 0,
+    "total_samples": 6999,
+    "confusion_matrix": [
+      [
+        6245,
+        754
+      ],
+      [
+        0,
+        0
+      ]
+    ]
+  },
+  "config": {
+    "C": 1.0,
+    "max_iter": 1000,
+    "class_weight": "balanced",
+    "solver": "liblinear",
+    "random_state": 42,
+    "mode": "binary",
+    "decision_threshold": 0.5,
+    "feature_representation": "flattened_window",
+    "tolerance": 0.0001
+  }
+}

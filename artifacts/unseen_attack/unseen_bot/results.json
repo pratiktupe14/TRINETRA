@@ -1,0 +1,89 @@
+{
+  "experiment_id": "unseen_bot",
+  "timestamp": "2026-10-05T00:39:52.774834+00:00",
+  "held_out_categories": [
+    "Bot"
+  ],
+  "known_categories": [
+    "DDoS",
+    "FTP-Patator",
+    "PortScan"
+  ],
+  "data_nature": "SYNTHETIC SOFTWARE VALIDATION",
+  "sample_counts": {
+    "train_samples": 265,
+    "val_samples": 57,
+    "known_test_samples": 43,
+    "unseen_test_samples": 75
+  },
+  "track_a_logistic": {
+    "known_attack_metrics": {
+      "precision": 0.9523809523809523,
+      "recall": 0.7142857142857143,
+      "f1_score": 0.8163265306122449,
+      "false_positive_rate": 0.06666666666666667,
+      "tp": 20,
+      "tn": 14,
+      "fp": 1,
+      "fn": 8,
+      "support_benign": 15,
+      "support_attack": 28,
+      "total_samples": 43,
+      "confusion_matrix": [
+        [
+          14,
+          1
+        ],
+        [
+          8,
+          20
+        ]
+      ],
+      "roc_auc": 0.9261904761904762,
+      "pr_auc": 0.936303877604966,
+      "class_distribution": {
+        "BENIGN": 15,
+        "ATTACK": 28
+      },
+      "decision_threshold": 0.5,
+      "per_class_report": null
+    },
+    "unseen_attack_metrics": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "false_positive_rate": 0.06666666666666667,
+      "tp": 0,
+      "tn": 14,
+      "fp": 1,
+      "fn": 60,
+      "support_benign": 15,
+      "support_attack": 60,
+      "total_samples": 75,
+      "confusion_matrix": [
+        [
+          14,
+          1
+        ],
+        [
+          60,
+          0
+        ]
+      ],
+      "roc_auc": 0.23555555555555555,
+      "pr_auc": 0.6882742578771517,
+      "class_distribution": {
+        "BENIGN": 15,
+        "ATTACK": 60
+      },
+      "decision_threshold": 0.5,
+      "per_class_report": null
+    },
+    "performance_degradation": {
+      "delta_f1": 0.8163265306122449,
+      "delta_recall": 0.7142857142857143,
+      "delta_fpr": 0.0
+    }
+  },
+  "track_b_world_model": {}
+}

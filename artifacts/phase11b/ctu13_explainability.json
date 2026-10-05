@@ -1,0 +1,394 @@
+{
+  "samples": [
+    {
+      "source": "unseen_scenario_10",
+      "category": "Background",
+      "method": "State Delta Attribution (Deterministic, NOT SHAP)",
+      "dominant_group": "continuous",
+      "total_drift_magnitude": 277.26947021484375,
+      "top_drivers": [
+        {
+          "feature": "tot_bwd_bytes_trend",
+          "group": "continuous",
+          "delta": 5.91472864151001,
+          "direction": "INCREASE"
+        },
+        {
+          "feature": "bwd_pkt_len_max_trend",
+          "group": "continuous",
+          "delta": 5.79940128326416,
+          "direction": "INCREASE"
+        },
+        {
+          "feature": "fwd_pkt_len_mean_trend",
+          "group": "continuous",
+          "delta": 5.6087565422058105,
+          "direction": "INCREASE"
+        },
+        {
+          "feature": "flow_bytes_per_s_trend",
+          "group": "continuous",
+          "delta": 5.599551677703857,
+          "direction": "INCREASE"
+        },
+        {
+          "feature": "fwd_pkt_len_max_std",
+          "group": "continuous",
+          "delta": -5.519925594329834,
+          "direction": "DECREASE"
+        }
+      ]
+    },
+    {
+      "source": "unseen_scenario_10",
+      "category": "Background",
+      "method": "State Delta Attribution (Deterministic, NOT SHAP)",
+      "dominant_group": "continuous",
+      "total_drift_magnitude": 264.803955078125,
+      "top_drivers": [
+        {
+          "feature": "tot_bwd_bytes_trend",
+          "group": "continuous",
+          "delta": 5.612398147583008,
+          "direction": "INCREASE"
+        },
+        {
+          "feature": "bwd_pkt_len_max_trend",
+          "group": "continuous",
+          "delta": 5.484692573547363,
+          "direction": "INCREASE"
+        },
+        {
+          "feature": "flow_bytes_per_s_trend",
+          "group": "continuous",
+          "delta": 5.3219428062438965,
+          "direction": "INCREASE"
+        },
+        {
+          "feature": "fwd_pkt_len_mean_trend",
+          "group": "continuous",
+          "delta": 5.3051533699035645,
+          "direction": "INCREASE"
+        },
+        {
+          "feature": "fwd_pkt_len_max_std",
+          "group": "continuous",
+          "delta": -5.182924747467041,
+          "direction": "DECREASE"
+        }
+      ]
+    },
+    {
+      "source": "unseen_scenario_10",
+      "category": "Background",
+      "method": "State Delta Attribution (Deterministic, NOT SHAP)",
+      "dominant_group": "continuous",
+      "total_drift_magnitude": 112.9609375,
+      "top_drivers": [
+        {
+          "feature": "macro_flow_density",
+          "group": "macro",
+          "delta": -2.78125,
+          "direction": "DECREASE"
+        },
+        {
+          "feature": "bwd_pkt_len_max_trend",
+          "group": "continuous",
+          "delta": 2.0041892528533936,
+          "direction": "INCREASE"
+        },
+        {
+          "feature": "tot_bwd_bytes_trend",
+          "group": "continuous",
+          "delta": 1.8965461254119873,
+          "direction": "INCREASE"
+        },
+        {
+          "feature": "pkt_len_mean_trend",
+          "group": "continuous",
+          "delta": 1.8438794612884521,
+          "direction": "INCREASE"
+        },
+        {
+          "feature": "pkt_len_max_std",
+          "group": "continuous",
+          "delta": -1.8181918859481812,
+          "direction": "DECREASE"
+        }
+      ]
+    },
+    {
+      "source": "unseen_scenario_10",
+      "category": "Background",
+      "method": "State Delta Attribution (Deterministic, NOT SHAP)",
+      "dominant_group": "continuous",
+      "total_drift_magnitude": 247.43907165527344,
+      "top_drivers": [
+        {
+          "feature": "tot_bwd_bytes_trend",
+          "group": "continuous",
+          "delta": 5.097317695617676,
+          "direction": "INCREASE"
+        },
+        {
+          "feature": "bwd_pkt_len_max_trend",
+          "group": "continuous",
+          "delta": 4.977527141571045,
+          "direction": "INCREASE"
+        },
+        {
+          "feature": "flow_bytes_per_s_trend",
+          "group": "continuous",
+          "delta": 4.877010345458984,
+          "direction": "INCREASE"
+        },
+        {
+          "feature": "fwd_pkt_len_mean_trend",
+          "group": "continuous",
+          "delta": 4.840499401092529,
+          "direction": "INCREASE"
+        },
+        {
+          "feature": "fwd_pkt_len_max_std",
+          "group": "continuous",
+          "delta": -4.661379814147949,
+          "direction": "DECREASE"
+        }
+      ]
+    },
+    {
+      "source": "unseen_scenario_10",
+      "category": "Background",
+      "method": "State Delta Attribution (Deterministic, NOT SHAP)",
+      "dominant_group": "continuous",
+      "total_drift_magnitude": 210.60826110839844,
+      "top_drivers": [
+        {
+          "feature": "bwd_pkt_len_max_trend",
+          "group": "continuous",
+          "delta": 4.065371513366699,
+          "direction": "INCREASE"
+        },
+        {
+          "feature": "fwd_pkt_len_mean_trend",
+          "group": "continuous",
+          "delta": 4.065145492553711,
+          "direction": "INCREASE"
+        },
+        {
+          "feature": "flow_packets_per_s_trend",
+          "group": "continuous",
+          "delta": -3.9392104148864746,
+          "direction": "DECREASE"
+        },
+        {
+          "feature": "endpoint_unique_dst_ports",
+          "group": "endpoints",
+          "delta": -3.9193670749664307,
+          "direction": "DECREASE"
+        },
+        {
+          "feature": "subflow_bwd_bytes_trend",
+          "group": "continuous",
+          "delta": 3.888150930404663,
+          "direction": "INCREASE"
+        }
+      ]
+    },
+    {
+      "source": "known_test",
+      "category": "Background",
+      "method": "State Delta Attribution (Deterministic, NOT SHAP)",
+      "dominant_group": "continuous",
+      "total_drift_magnitude": 284.5073547363281,
+      "top_drivers": [
+        {
+          "feature": "tot_bwd_bytes_trend",
+          "group": "continuous",
+          "delta": 6.122686386108398,
+          "direction": "INCREASE"
+        },
+        {
+          "feature": "bwd_pkt_len_max_trend",
+          "group": "continuous",
+          "delta": 6.0055646896362305,
+          "direction": "INCREASE"
+        },
+        {
+          "feature": "fwd_pkt_len_mean_trend",
+          "group": "continuous",
+          "delta": 5.816689968109131,
+          "direction": "INCREASE"
+        },
+        {
+          "feature": "flow_bytes_per_s_trend",
+          "group": "continuous",
+          "delta": 5.764542102813721,
+          "direction": "INCREASE"
+        },
+        {
+          "feature": "fwd_pkt_len_max_std",
+          "group": "continuous",
+          "delta": -5.732332229614258,
+          "direction": "DECREASE"
+        }
+      ]
+    },
+    {
+      "source": "known_test",
+      "category": "Background",
+      "method": "State Delta Attribution (Deterministic, NOT SHAP)",
+      "dominant_group": "continuous",
+      "total_drift_magnitude": 261.7566833496094,
+      "top_drivers": [
+        {
+          "feature": "tot_bwd_bytes_trend",
+          "group": "continuous",
+          "delta": 5.367298603057861,
+          "direction": "INCREASE"
+        },
+        {
+          "feature": "bwd_pkt_len_max_trend",
+          "group": "continuous",
+          "delta": 5.294551372528076,
+          "direction": "INCREASE"
+        },
+        {
+          "feature": "flow_bytes_per_s_trend",
+          "group": "continuous",
+          "delta": 5.140303134918213,
+          "direction": "INCREASE"
+        },
+        {
+          "feature": "fwd_pkt_len_mean_trend",
+          "group": "continuous",
+          "delta": 5.089114665985107,
+          "direction": "INCREASE"
+        },
+        {
+          "feature": "fwd_pkt_len_max_std",
+          "group": "continuous",
+          "delta": -4.975016117095947,
+          "direction": "DECREASE"
+        }
+      ]
+    },
+    {
+      "source": "known_test",
+      "category": "Background",
+      "method": "State Delta Attribution (Deterministic, NOT SHAP)",
+      "dominant_group": "continuous",
+      "total_drift_magnitude": 277.7180480957031,
+      "top_drivers": [
+        {
+          "feature": "bwd_pkt_len_max_trend",
+          "group": "continuous",
+          "delta": 6.077268123626709,
+          "direction": "INCREASE"
+        },
+        {
+          "feature": "tot_bwd_bytes_trend",
+          "group": "continuous",
+          "delta": 6.053922176361084,
+          "direction": "INCREASE"
+        },
+        {
+          "feature": "fwd_pkt_len_mean_trend",
+          "group": "continuous",
+          "delta": 5.889556407928467,
+          "direction": "INCREASE"
+        },
+        {
+          "feature": "fwd_pkt_len_max_std",
+          "group": "continuous",
+          "delta": -5.602853775024414,
+          "direction": "DECREASE"
+        },
+        {
+          "feature": "flow_bytes_per_s_trend",
+          "group": "continuous",
+          "delta": 5.529971599578857,
+          "direction": "INCREASE"
+        }
+      ]
+    },
+    {
+      "source": "known_test",
+      "category": "Background",
+      "method": "State Delta Attribution (Deterministic, NOT SHAP)",
+      "dominant_group": "continuous",
+      "total_drift_magnitude": 215.21519470214844,
+      "top_drivers": [
+        {
+          "feature": "tot_bwd_bytes_trend",
+          "group": "continuous",
+          "delta": 4.311553955078125,
+          "direction": "INCREASE"
+        },
+        {
+          "feature": "flow_bytes_per_s_trend",
+          "group": "continuous",
+          "delta": 4.128546714782715,
+          "direction": "INCREASE"
+        },
+        {
+          "feature": "bwd_pkt_len_max_trend",
+          "group": "continuous",
+          "delta": 4.11069917678833,
+          "direction": "INCREASE"
+        },
+        {
+          "feature": "fwd_pkt_len_mean_trend",
+          "group": "continuous",
+          "delta": 4.012793064117432,
+          "direction": "INCREASE"
+        },
+        {
+          "feature": "pkt_len_max_std",
+          "group": "continuous",
+          "delta": -3.8540804386138916,
+          "direction": "DECREASE"
+        }
+      ]
+    },
+    {
+      "source": "known_test",
+      "category": "Background",
+      "method": "State Delta Attribution (Deterministic, NOT SHAP)",
+      "dominant_group": "continuous",
+      "total_drift_magnitude": 161.17837524414062,
+      "top_drivers": [
+        {
+          "feature": "bwd_pkt_len_max_trend",
+          "group": "continuous",
+          "delta": 3.1807897090911865,
+          "direction": "INCREASE"
+        },
+        {
+          "feature": "tot_bwd_bytes_trend",
+          "group": "continuous",
+          "delta": 2.8871145248413086,
+          "direction": "INCREASE"
+        },
+        {
+          "feature": "subflow_fwd_bytes_trend",
+          "group": "continuous",
+          "delta": 2.7516260147094727,
+          "direction": "INCREASE"
+        },
+        {
+          "feature": "flow_bytes_per_s_trend",
+          "group": "continuous",
+          "delta": 2.7484519481658936,
+          "direction": "INCREASE"
+        },
+        {
+          "feature": "fwd_pkt_len_mean_trend",
+          "group": "continuous",
+          "delta": 2.7264299392700195,
+          "direction": "INCREASE"
+        }
+      ]
+    }
+  ]
+}

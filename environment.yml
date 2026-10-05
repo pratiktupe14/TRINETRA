@@ -1,0 +1,21 @@
+name: shield-rca
+channels: [conda-forge, pytorch]
+dependencies:
+  - python=3.10
+  - pip
+  - numpy
+  - pandas
+  - scipy
+  - scikit-learn
+  - networkx
+  - matplotlib
+  - pyyaml
+  - pytorch
+  - cpuonly
+  - pip:
+      - statsmodels
+      - typer
+      - rich
+      - loguru
+      - kafka-python
+      - redis

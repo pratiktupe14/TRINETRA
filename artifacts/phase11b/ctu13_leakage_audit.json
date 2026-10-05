@@ -1,0 +1,19 @@
+{
+  "audit_name": "CTU-13 Scenario Partition & Contamination Audit",
+  "leakage_passed": true,
+  "checks": {
+    "unseen_scenario_absent_from_training": true,
+    "unseen_scenario_absent_from_validation": true,
+    "unseen_scenario_absent_from_known_test": true,
+    "unseen_scenario_isolated": true,
+    "train_val_disjoint": true,
+    "train_known_test_disjoint": true,
+    "val_known_test_disjoint": true,
+    "all_13_scenarios_accounted_for": true,
+    "temporal_window_cross_boundary_isolation": true,
+    "label_feature_leakage_free": true,
+    "scaler_fitted_exclusively_on_train": true
+  },
+  "errors": [],
+  "timestamp": "2026-10-05T17:05:44.426385+00:00"
+}

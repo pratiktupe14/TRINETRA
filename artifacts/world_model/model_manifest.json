@@ -1,0 +1,12 @@
+{
+  "model_type": "StateResidualDynamicsModel",
+  "created_at": "2026-09-03T19:02:00.508520+00:00",
+  "state_schema_version": "1.0.0",
+  "state_dim": 280,
+  "weights_file": "best_model.pt",
+  "config_file": "model_config.json",
+  "best_val_loss": 0.002600024784139047,
+  "epochs_trained": 20,
+  "seed": 42,
+  "batch_size": 32
+}

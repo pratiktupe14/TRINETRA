@@ -1,0 +1,38 @@
+# default.yaml - Mock Configuration for CyberHeal AI
+project: "CyberHeal AI Mock"
+version: "1.0.0"
+
+paths:
+  dataset: "data/mock_dataset.csv"
+  output_dir: "outputs"
+
+agents:
+  sentinel:
+    threshold: 0.85
+    algorithm: "hybrid_change_point"
+  causor:
+    max_depth: 3
+    graph_type: "temporal"
+  planner:
+    strategy: "constrained_remediation"
+  guardian:
+    policy_strictness: "high"
+  scribe:
+    log_level: "INFO"
+
+telemetry:
+  schema_version: "1.0.0"
+  feature_dim: 78
+  window_size: 20
+  stride: 10
+  min_points_per_window: 1
+  sequence_label_rule: "majority"
+  scaler_type: "standard"
+  split:
+    train_ratio: 0.70
+    val_ratio: 0.15
+    test_ratio: 0.15
+  paths:
+    cache_dir: "outputs/telemetry_cache"
+    scaler_dir: "outputs/models/scaler"
+    schema_file: "outputs/models/feature_schema.json"

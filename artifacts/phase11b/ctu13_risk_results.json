@@ -1,0 +1,207 @@
+{
+  "samples": [
+    {
+      "source": "unseen_scenario_10",
+      "label": 0,
+      "category": "Background",
+      "risk_score": 0.7524475857196166,
+      "infiltration_score": 0.87940028564544,
+      "predicted_stage": "RECONNAISSANCE",
+      "stage_confidence": 0.8951539368839948,
+      "mitre_technique": null,
+      "trigger_decision": "AUTO_TRIGGER",
+      "trigger_allowed": true,
+      "reasons": [
+        "Risk score (0.752) meets or exceeds auto threshold (0.750)",
+        "Confidence (0.895) meets or exceeds auto threshold (0.750)",
+        "Evidence strength (1.000) meets or exceeds auto threshold (0.600)",
+        "Action safety (SAFE) is approved for automated remediation",
+        "Asset criticality (MEDIUM) permits automated action (<= MEDIUM)",
+        "Predicted stage (RECONNAISSANCE) is approved for automated triggering"
+      ],
+      "blocking_reasons": []
+    },
+    {
+      "source": "unseen_scenario_10",
+      "label": 0,
+      "category": "Background",
+      "risk_score": 0.7338049805319347,
+      "infiltration_score": 0.8625950813444033,
+      "predicted_stage": "RECONNAISSANCE",
+      "stage_confidence": 0.8900087631932796,
+      "mitre_technique": null,
+      "trigger_decision": "HUMAN_REVIEW",
+      "trigger_allowed": false,
+      "reasons": [
+        "Predictive risk score (0.734) meets or exceeds review threshold (0.350)",
+        "Automated triggering withheld due to 1 safety gate check(s); escalating to human review",
+        "Predicted threat stage is RECONNAISSANCE"
+      ],
+      "blocking_reasons": [
+        "Risk score (0.734) below auto threshold (0.750)"
+      ]
+    },
+    {
+      "source": "unseen_scenario_10",
+      "label": 0,
+      "category": "Background",
+      "risk_score": 0.46771471121610964,
+      "infiltration_score": 0.6236271113757935,
+      "predicted_stage": "RECONNAISSANCE",
+      "stage_confidence": 0.7852092018859882,
+      "mitre_technique": null,
+      "trigger_decision": "HUMAN_REVIEW",
+      "trigger_allowed": false,
+      "reasons": [
+        "Predictive risk score (0.468) meets or exceeds review threshold (0.350)",
+        "Automated triggering withheld due to 1 safety gate check(s); escalating to human review",
+        "Predicted threat stage is RECONNAISSANCE"
+      ],
+      "blocking_reasons": [
+        "Risk score (0.468) below auto threshold (0.750)"
+      ]
+    },
+    {
+      "source": "unseen_scenario_10",
+      "label": 0,
+      "category": "Background",
+      "risk_score": 0.6989570324033525,
+      "infiltration_score": 0.8253203328299561,
+      "predicted_stage": "RECONNAISSANCE",
+      "stage_confidence": 0.8782840550737065,
+      "mitre_technique": null,
+      "trigger_decision": "HUMAN_REVIEW",
+      "trigger_allowed": false,
+      "reasons": [
+        "Predictive risk score (0.699) meets or exceeds review threshold (0.350)",
+        "Automated triggering withheld due to 1 safety gate check(s); escalating to human review",
+        "Predicted threat stage is RECONNAISSANCE"
+      ],
+      "blocking_reasons": [
+        "Risk score (0.699) below auto threshold (0.750)"
+      ]
+    },
+    {
+      "source": "unseen_scenario_10",
+      "label": 0,
+      "category": "Background",
+      "risk_score": 0.6442583877984029,
+      "infiltration_score": 0.7963747743564322,
+      "predicted_stage": "RECONNAISSANCE",
+      "stage_confidence": 0.8746858701959579,
+      "mitre_technique": null,
+      "trigger_decision": "HUMAN_REVIEW",
+      "trigger_allowed": false,
+      "reasons": [
+        "Predictive risk score (0.644) meets or exceeds review threshold (0.350)",
+        "Automated triggering withheld due to 1 safety gate check(s); escalating to human review",
+        "Predicted threat stage is RECONNAISSANCE"
+      ],
+      "blocking_reasons": [
+        "Risk score (0.644) below auto threshold (0.750)"
+      ]
+    },
+    {
+      "source": "known_test",
+      "label": 0,
+      "category": "Background",
+      "risk_score": 0.7631826126730312,
+      "infiltration_score": 0.8887593777803028,
+      "predicted_stage": "RECONNAISSANCE",
+      "stage_confidence": 0.8986121860956915,
+      "mitre_technique": null,
+      "trigger_decision": "AUTO_TRIGGER",
+      "trigger_allowed": true,
+      "reasons": [
+        "Risk score (0.763) meets or exceeds auto threshold (0.750)",
+        "Confidence (0.899) meets or exceeds auto threshold (0.750)",
+        "Evidence strength (1.000) meets or exceeds auto threshold (0.600)",
+        "Action safety (SAFE) is approved for automated remediation",
+        "Asset criticality (MEDIUM) permits automated action (<= MEDIUM)",
+        "Predicted stage (RECONNAISSANCE) is approved for automated triggering"
+      ],
+      "blocking_reasons": []
+    },
+    {
+      "source": "known_test",
+      "label": 0,
+      "category": "Background",
+      "risk_score": 0.7155771706366276,
+      "infiltration_score": 0.8380951290208846,
+      "predicted_stage": "RECONNAISSANCE",
+      "stage_confidence": 0.8804409410737878,
+      "mitre_technique": null,
+      "trigger_decision": "HUMAN_REVIEW",
+      "trigger_allowed": false,
+      "reasons": [
+        "Predictive risk score (0.716) meets or exceeds review threshold (0.350)",
+        "Automated triggering withheld due to 1 safety gate check(s); escalating to human review",
+        "Predicted threat stage is RECONNAISSANCE"
+      ],
+      "blocking_reasons": [
+        "Risk score (0.716) below auto threshold (0.750)"
+      ]
+    },
+    {
+      "source": "known_test",
+      "label": 0,
+      "category": "Background",
+      "risk_score": 0.7537909849780629,
+      "infiltration_score": 0.8817905569203519,
+      "predicted_stage": "RECONNAISSANCE",
+      "stage_confidence": 0.9005428557966686,
+      "mitre_technique": null,
+      "trigger_decision": "AUTO_TRIGGER",
+      "trigger_allowed": true,
+      "reasons": [
+        "Risk score (0.754) meets or exceeds auto threshold (0.750)",
+        "Confidence (0.901) meets or exceeds auto threshold (0.750)",
+        "Evidence strength (1.000) meets or exceeds auto threshold (0.600)",
+        "Action safety (SAFE) is approved for automated remediation",
+        "Asset criticality (MEDIUM) permits automated action (<= MEDIUM)",
+        "Predicted stage (RECONNAISSANCE) is approved for automated triggering"
+      ],
+      "blocking_reasons": []
+    },
+    {
+      "source": "known_test",
+      "label": 0,
+      "category": "Background",
+      "risk_score": 0.6429796448347536,
+      "infiltration_score": 0.7670518580960093,
+      "predicted_stage": "RECONNAISSANCE",
+      "stage_confidence": 0.8621264776848483,
+      "mitre_technique": null,
+      "trigger_decision": "HUMAN_REVIEW",
+      "trigger_allowed": false,
+      "reasons": [
+        "Predictive risk score (0.643) meets or exceeds review threshold (0.350)",
+        "Automated triggering withheld due to 1 safety gate check(s); escalating to human review",
+        "Predicted threat stage is RECONNAISSANCE"
+      ],
+      "blocking_reasons": [
+        "Risk score (0.643) below auto threshold (0.750)"
+      ]
+    },
+    {
+      "source": "known_test",
+      "label": 0,
+      "category": "Background",
+      "risk_score": 0.5400075441990027,
+      "infiltration_score": 0.6617333175945974,
+      "predicted_stage": "RECONNAISSANCE",
+      "stage_confidence": 0.8030033834663834,
+      "mitre_technique": null,
+      "trigger_decision": "HUMAN_REVIEW",
+      "trigger_allowed": false,
+      "reasons": [
+        "Predictive risk score (0.540) meets or exceeds review threshold (0.350)",
+        "Automated triggering withheld due to 1 safety gate check(s); escalating to human review",
+        "Predicted threat stage is RECONNAISSANCE"
+      ],
+      "blocking_reasons": [
+        "Risk score (0.540) below auto threshold (0.750)"
+      ]
+    }
+  ]
+}

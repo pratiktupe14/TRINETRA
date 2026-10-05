@@ -1,0 +1,11 @@
+{
+  "state_dim": 280,
+  "hidden_dim": 128,
+  "num_blocks": 2,
+  "max_horizon": 16,
+  "horizons": [
+    1,
+    3,
+    5
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "model_type": "LogisticRegressionBaseline",
+  "framework": "scikit-learn",
+  "created_at": "2026-10-05T00:35:41.884171+00:00",
+  "feature_representation": "flattened_window",
+  "feature_dim": 1560,
+  "positive_class": "ATTACK (1)",
+  "negative_class": "BENIGN (0)",
+  "decision_threshold": 0.5,
+  "model_file": "model.joblib",
+  "scaler_file": "scaler.joblib",
+  "config_file": "model_config.json",
+  "test_metrics": {
+    "precision": 0.7142857142857143,
+    "recall": 1.0,
+    "f1_score": 0.8333333333333333,
+    "false_positive_rate": 0.11428571428571428,
+    "roc_auc": 0.9942857142857142,
+    "pr_auc": 0.9833333333333333
+  }
+}
